@@ -40,13 +40,13 @@ const plugins = () => {
             },
         }),
         //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
-        new HTMLWebpackPlugin({
-            template: path.resolve(__dirname, 'src/pug/page.pug'),
-            filename: 'page.html',
-            minify: {                                            //Нужно придумать как конвертировать еще одну страницу из src/pug в app и при этом не писать заного в файле конфига!
-                collapseWhitespace: isProd
-            },
-        }),
+        // new HTMLWebpackPlugin({
+        //     template: path.resolve(__dirname, 'src/pug/page.pug'),
+        //     filename: 'page.html',
+        //     minify: {                                            //Нужно придумать как конвертировать еще одну страницу из src/pug в app и при этом не писать заного в файле конфига!
+        //         collapseWhitespace: isProd
+        //     },
+        // }),
         //------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
         new HtmlWebpackPugPlugin({
             adjusIndent: true

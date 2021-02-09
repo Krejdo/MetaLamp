@@ -1,0 +1,23 @@
+//@import "normalize.scss";
+
+//------Style Registrarion Card------
+.reg-card {
+    width: 380px;
+    height: 646px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    padding: 40px 30px 30px 30px;
+        p {
+            margin-top: 20px;
+        }
+        .reg-card__title {
+            font-size: 24px;
+        }
+}
+
+input {
+    width: 320px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+}
