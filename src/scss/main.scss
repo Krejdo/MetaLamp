@@ -28,8 +28,10 @@ input {
 h1 {
     margin: 0;
 }
+//-----------------------------------
 
-//-----Style Toggle Button------
+
+//-------Style Toggle Button---------
 .toggle-button {
     position: relative;
     display: inline-block;
@@ -64,3 +66,4 @@ h1 {
             transform: translateX(calc(100% + 8px));
         }
 }
+//-----------------------------------
