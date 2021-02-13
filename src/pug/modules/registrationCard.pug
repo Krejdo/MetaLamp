@@ -1,10 +1,31 @@
 .reg-card
-     .reg-card__title Регистрация аккаунта
-          .reg-card__imput
-               p 
-                    input(type="text" placeholder="Имя")
-               p
-                    input(type="text" placeholder="Фамилия")
-          .reg-card__radio
-               input(type="radio")
-               input(type="radio")
+     .reg-card__title
+         h1 
+             span  Регистрация аккаунта
+     .reg-card__input
+         .reg-card__first-name
+              input(type="text" placeholder="Имя")
+         .reg-card__last-name
+              input(type="text" placeholder="Фамилия")
+     .reg-card__radio
+         .reg-card__male
+             input(type="radio")
+             span Мужчина
+         .reg-card__femail
+             input(type="radio")
+             span Женщина
+     .reg-card__input
+          .reg-card__date
+               h3
+                    span Дата рождения
+          input(type="text" placeholder="ДД.ММ.ГГГГ")
+     .reg-card__input
+          h3 
+               span Данные для входа в сервис
+          .reg-card__email
+              input(type="text" placeholder="Email")
+          .reg-card__pass
+              input(type="text" placeholder="Пароль")
+     .reg-card__toggle-buttom 
+          input(type="checkbox" id="toggle-buttom" class="toggle-button")
+          label(for="toggle-buttom" class="text") Получать спецпредложения

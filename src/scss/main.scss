@@ -1,23 +1,66 @@
-//@import "normalize.scss";
+@import "normalize.scss";
 
 //------Style Registrarion Card------
 .reg-card {
-    width: 380px;
+    width: 320px;
     height: 646px;
     box-shadow: 0 0 25px rgba(0,0,0,0.2);
     border-radius: 4px;
     padding: 40px 30px 30px 30px;
-        p {
-            margin-top: 20px;
-        }
         .reg-card__title {
             font-size: 24px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
         }
 }
 
 input {
-    width: 320px;
+    width: 318px;
     height: 44px;
     border: 1px solid rgba(31, 32, 65, 0.25);
     border-radius: 4px;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+//-----Style Toggle Button------
+.toggle-button {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin: 0;
+    vertical-align: top;
+    background: #ffffff;
+    border: 1px solid #bbc1e1;
+    border-radius: 30px;
+    transition: 0.3s;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            width: 12px;
+            height: 12px;
+            background-color:rgba(31, 32, 65, 0.25);;
+            ;
+            border-radius: 50%;
+            transform: translateX(0);
+            transition: 0.3s;
+        }
+        &:checked::after {
+            transform: translateX(calc(100% + 8px));
+        }
 }
