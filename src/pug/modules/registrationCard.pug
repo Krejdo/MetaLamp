@@ -3,29 +3,38 @@
          h1 
              span  Регистрация аккаунта
      .reg-card__input
-         .reg-card__first-name
-              input(type="text" placeholder="Имя")
-         .reg-card__last-name
-              input(type="text" placeholder="Фамилия")
+         .reg-card__first-name.margin-bottom10
+              input(type="text" class="input-padding" placeholder="Имя")
+         .reg-card__last-name.margin-bottom10
+              input(type="text" class="input-padding" placeholder="Фамилия")
      .reg-card__radio
-         .reg-card__male
-               label(for="reg-card__male") Мужчина
-                    input(type="radio")
-         .reg-card__femail
-               label(for="reg-card__male") Женщина
-                    input(type="radio")
-     .reg-card__input
+         .radio
+              input(type="radio" id="radio-1" name="radio")
+              label(for="radio-1" class="radio-label") Мужчина
+              input(type="radio" id="radio-2" name="radio")
+              label(for="radio-2" class="radio-label") Женщина
+     .reg-card__input.margin-bottom20
           .reg-card__date
                h3
-                    span Дата рождения
-          input(type="text" placeholder="ДД.ММ.ГГГГ")
+                    span дата рождения
+          input(type="text" class="input-padding" placeholder="ДД.ММ.ГГГГ")
      .reg-card__input
-          h3 
-               span Данные для входа в сервис
-          .reg-card__email
-              input(type="text" placeholder="Email")
-          .reg-card__pass
-              input(type="text" placeholder="Пароль")
-     .reg-card__toggle-buttom 
-          input(type="checkbox" id="toggle-buttom" class="toggle-button")
-          label(for="toggle-buttom" class="text") Получать спецпредложения
+          h3
+              span данные для входа в сервис
+          .reg-card__email.margin-bottom10
+              input(type="text" class="input-padding" placeholder="Email")
+          .reg-card__pass.margin-bottom10
+              input(type="text" class="input-padding" placeholder="Пароль")
+     .reg-card__toggle-button.margin-bottom20 
+          input(type="checkbox" id="toggle-button" class="toggle-button")
+          label(for="toggle-button" class="text") Получать спецпредложения
+     .reg-card__pay-button
+         form
+             button(class="pay-button")
+                 span перейти к оплате
+     .reg-card__entry
+         .reg-card__entry-button
+                  button(class="entry-button")
+                      span войти
+         .reg-card__entry-caption 
+              span Уже есть аккаунт на Toxin   
