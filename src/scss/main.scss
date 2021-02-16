@@ -1,5 +1,6 @@
 @import "normalize.scss";
 @import "./mixins/color.scss";
+//@import "./mixins/fonts.scss";
 
 
 //------Style Registrarion Card------
@@ -166,4 +167,22 @@ h1 {
 //------Entry button------
 .reg-card__entry {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    
+}
+
+.entry-button {
+    width: 99px;
+    height: 44px;
+    border-radius: 22px;
+    border:2px solid $PurpleBaseColor; //Сейчас сплошной цвет, надо градиет
+    background: white;
+        span {
+            color: $PurpleBaseColor;
+        }
+}
+
+.reg-card__entry-caption {
+    text-align: center;
 }
