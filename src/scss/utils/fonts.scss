@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'Conv_Montserrat-Regular';
+	src: url('/fonts/Montserrat-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_Montserrat-Bold';
+	src: url('/fonts/Montserrat-Bold.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+//Пока работает только подключение woff формата, остальные не подключаются, выдают ошибку, разобратся позже

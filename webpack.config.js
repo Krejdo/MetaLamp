@@ -57,7 +57,8 @@ const plugins = () => {
         }),
         new CopyWebpackPlugin({
             patterns: [
-                {from: path.resolve(__dirname, 'src/assets') , to: path.resolve(__dirname, 'app')}
+                {from: path.resolve(__dirname, 'src/assets') , to: path.resolve(__dirname, 'app')},
+                {from: path.resolve(__dirname, 'src/fonts') , to: path.resolve(__dirname, 'app/fonts')}
             ]
         }),
     ];
@@ -159,7 +160,7 @@ module.exports = {
                 }],
             },
             {
-                test: /\.(?:|woff2)$/,
+                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [{
                     loader: 'file-loader',
                     options: {

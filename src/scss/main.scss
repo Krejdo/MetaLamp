@@ -1,7 +1,10 @@
-@import "normalize.scss";
-@import "./mixins/color.scss";
-//@import "./mixins/fonts.scss";
+@import "./utils/normalize.scss";
+@import "./utils/vars.scss";
+@import "./utils/fonts.scss";
 
+body {
+    font-family: 'Conv_Montserrat-Regular', sans-serif;
+}
 
 //------Style Registrarion Card------
 .reg-card {
