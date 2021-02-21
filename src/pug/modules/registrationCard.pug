@@ -3,37 +3,41 @@
          h1 
              span  Регистрация аккаунта
      .reg-card__input
-         .reg-card__first-name.margin-bottom10
+         .first-name.mb-10
               input(type="text" class="input-padding" placeholder="Имя")
-         .reg-card__last-name.margin-bottom10
+         .last-name.mb-10
               input(type="text" class="input-padding" placeholder="Фамилия")
      .reg-card__radio
          .radio
               input(type="radio" id="radio-1" name="radio")
-              label(for="radio-1" class="radio-label") Мужчина
+              label(for="radio-1" class="radio-label")
+                  span Мужчина
               input(type="radio" id="radio-2" name="radio")
-              label(for="radio-2" class="radio-label") Женщина
-     .reg-card__input.margin-bottom20
-          .reg-card__date
-               h3
-                    span дата рождения
-          input(type="text" class="input-padding" placeholder="ДД.ММ.ГГГГ")
-     .reg-card__input
+              label(for="radio-2" class="radio-label")
+                  span Женщина
+     .reg-card__title-text
           h3
+              span дата рождения
+     .reg-card__input.mb-20
+          input(type="text" class="input-padding" placeholder="ДД.ММ.ГГГГ")
+     .reg-card__title-text
+         h3
               span данные для входа в сервис
-          .reg-card__email.margin-bottom10
+     .reg-card__input
+          .email.mb-10
               input(type="text" class="input-padding" placeholder="Email")
-          .reg-card__pass.margin-bottom10
+          .pass.mb-10
               input(type="text" class="input-padding" placeholder="Пароль")
-     .reg-card__toggle-button.margin-bottom20 
+     .reg-card__toggle-button.mb-20 
           input(type="checkbox" id="toggle-button" class="toggle-button")
-          label(for="toggle-button" class="text") Получать спецпредложения
+          label(for="toggle-button" class="text") 
+              span.gray Получать спецпредложения
      .reg-card__pay-button
          form
              button(class="pay-button")
                  span перейти к оплате
      .reg-card__entry
-         .reg-card__entry-caption Уже есть аккаунт на Toxin 
-         .reg-card__entry-button
-                  button(class="entry-button")
+         .entry-caption Уже есть аккаунт на Toxin 
+         .entry-button
+                  button(class="entry")
                       span войти  
