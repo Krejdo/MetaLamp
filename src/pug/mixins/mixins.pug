@@ -1,0 +1,17 @@
+mixin inputCard(value,name)
+    .input-card(class="" + value)
+        input(type="text" class="input-card_style" placeholder=name)
+
+
+mixin payButton(value,text)
+    .button-gradiend(class="" + value)
+         form
+             button(class="button-gradiend_style")
+                 span=text
+                 img(src="../blocks/regCard/arrow_forward.png", alt="")
+
+
+mixin buttonOut(text)
+    .button-bg-out
+        button(class="button-bg-out_style")
+            span=text
