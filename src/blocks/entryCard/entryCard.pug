@@ -1,0 +1,12 @@
+include ../../pug/mixins/mixins.pug
+
+.card-shadow
+    .title-card
+        h1
+            span  Войти
+    +inputCard("mb-10","Email")
+    +inputCard("mb-20","Пароль")
+    +payButton("mb-30", "войти", "")
+    .text-button
+        .text-button__caption Нет аккаунта на Toxin?
+        +buttonOut("","создать")

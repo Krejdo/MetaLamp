@@ -1,0 +1,13 @@
+.footer {
+    height: 372px;
+    padding: 104px 140px 100px 140px;
+    border-top: 1px solid black;
+    display: flex;
+    &__column-logo {
+        max-width: 260px;
+    }
+}
+
+li {
+    list-style-type: none;
+}

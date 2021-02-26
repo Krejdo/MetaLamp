@@ -1,7 +1,7 @@
 include ../../pug/mixins/mixins.pug
 
-.reg-card
-     .reg-card__title
+.card-shadow
+     .title-card
          h1
              span  Регистрация аккаунта
      +inputCard("mb-10","Имя")
@@ -26,7 +26,7 @@ include ../../pug/mixins/mixins.pug
           input(type="checkbox" id="toggle-button" class="toggle-button")
           label(for="toggle-button" class="text") 
               span.gray Получать спецпредложения
-     +payButton("mb-30", "перейти к оплате")
-     .reg-card__entry
-         .entry-caption Уже есть аккаунт на Toxin 
-         +buttonOut("войти")
+     +payButton("mb-30", "перейти к оплате", "")
+     .text-button
+         .text-button__caption Уже есть аккаунт на Toxin 
+         +buttonOut("","войти")

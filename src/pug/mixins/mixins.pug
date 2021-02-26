@@ -3,15 +3,15 @@ mixin inputCard(value,name)
         input(type="text" class="input-card_style" placeholder=name)
 
 
-mixin payButton(value,text)
+mixin payButton(value,text,height)
     .button-gradiend(class="" + value)
          form
-             button(class="button-gradiend_style")
+             button(class="button-gradiend_style" + " " + height)
                  span=text
                  img(src="../blocks/regCard/arrow_forward.png", alt="")
 
 
-mixin buttonOut(text)
+mixin buttonOut(value,text)
     .button-bg-out
-        button(class="button-bg-out_style")
+        button(class="button-bg-out_style" + " " + value)
             span=text

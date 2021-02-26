@@ -1,4 +1,6 @@
 @import "./utils/normalize.scss";
 @import "./utils/fonts.scss";
 @import "./utils/vars.scss";
-@import "../blocks/regCard/regCard.scss"
+@import "../blocks/regCard/regCard.scss";
+@import "../pug/modules/header.scss";
+@import "../pug/modules/footer.scss";
