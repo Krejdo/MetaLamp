@@ -1,0 +1,35 @@
+.button-bg-out {
+
+    // .button-bg-out_style
+
+    &_style {
+        border-radius: 100rem;
+        padding: 1rem;
+        padding: .9rem 1.5rem;
+        border: solid 2px transparent;
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(180deg, $PurpleBaseColor, $PurpleGradientColor);
+        background-origin: border-box;
+        background-clip: content-box, border-box;
+        box-shadow: 2px 1000px 1px #fff inset;
+
+            //Не получается сделать плавный переход при наведении
+
+            &:hover {
+                background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(180deg, #BC9CFF80, #8BA4F980);
+            }
+            span {
+                color: $PurpleBaseColor;
+                text-transform: uppercase;
+                font-family: $BoldFont;
+                font-size: $FontSizeH3;
+            }
+    }
+}
+
+//---------Переписать эти модификаторы они для кнопки header'а-----------//
+
+.button-bg-out_style-header {
+    width: 87px;
+    height: 34px;
+    margin-right: 20px;
+}

@@ -1,6 +1,11 @@
 @import "./utils/normalize.scss";
+@import "./base.scss";
 @import "./utils/fonts.scss";
 @import "./utils/vars.scss";
-@import "../blocks/regCard/regCard.scss";
-@import "../pug/modules/header.scss";
-@import "../pug/modules/footer.scss";
+@import "../blocks/header/header.scss";
+@import "../blocks/footer/footer.scss";
+@import "../blocks/card/card.scss";
+@import "../blocks/inputCard/inputCard.scss";
+@import "../blocks/textButton/textButton.scss";
+@import "../blocks/buttonGradient/buttonGradient.scss";
+@import "../blocks/buttonOutGradient/buttonOutGradient.scss";

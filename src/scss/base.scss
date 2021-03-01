@@ -1,0 +1,12 @@
+input, button {
+    outline: none;
+}
+
+//---fix button text center----//
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}

@@ -26,24 +26,11 @@ a:nth-child(1) {
 }
 
 .logo {
-    background: url(/img/Logo.png); //нужно ссылкой!
+    background: url(/img/Logo.png);
     width: 105.69px;
     height: 40px;
     & a {
         display: block;
         height: 100%;
     }
-}
-
-//-------Продумать лучше как менять уже готовые блоки----//
-
-.button-bg-out_style-header {
-    width: 87px;
-    height: 34px;
-    margin-right: 20px;
-}
-
-.button-gradiend_style-header {
-    width: 196px;
-    height: 34px;
 }

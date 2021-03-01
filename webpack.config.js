@@ -104,7 +104,7 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         contentBase: path.resolve(__dirname, 'app'),
-        open: true,
+        open: 'chrome',
         compress: true,
         hot: true,
         port: 3000,
