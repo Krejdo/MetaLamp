@@ -1,0 +1,143 @@
+.card {
+    width: 320px;
+    box-shadow: 0 0 25px $boxShadowCard;
+    border-radius: 4px;
+    padding: 40px 30px 30px 30px;
+
+    margin: 50px; //Delite late
+
+    // .card__title
+
+    &__title {
+        margin: 0;
+        margin-bottom: 20px;
+        font-family: $boldFont; //переделать
+        font-size: $fontSizeH1;
+    }
+
+    // .card__toggleButton
+
+    &__toggleButton {
+        margin-bottom: 20px;
+    }
+
+    // .card____titleInput
+
+    &__titleInput {
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-family: $boldFont;
+        font-size: $fontSizeH3;
+    }
+    & .text {
+        display: inline-block; //переделать класс лэйбл
+    }
+
+    // .card__radioButton
+
+    &__radioButton {
+        &:checked,
+        &:not(:checked) {
+            position: absolute;
+            left: -9999px;
+        }
+        &:checked + label,
+        &:not(:checked) + label {
+            position: relative;
+            padding-left: 28px;
+            cursor: pointer;
+            line-height: 20px;
+            display: inline-block;
+            color: #666;
+        }
+        &:checked + label:before,
+        &:not(:checked) + label:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 18px;
+            height: 18px;
+            border: 1px solid color(primary-25);
+            border-radius: 100%;
+            background: #fff;
+        }
+        &:checked + label:after,
+        &:not(:checked) + label:after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            background: linear-gradient(180deg, $purpleBase 0%, $purpleGradient 100%);
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            border-radius: 100%;
+        }
+        &:not(:checked) + label:after {
+            opacity: 0;
+        }
+        &:not(:checked) + label {
+            color: rgba(31, 32, 65, 0.5);
+        }
+        &:checked + label:before {
+            border: 1px solid $purpleBase;
+        }
+    }
+
+    // .card__radioLabel
+
+    &__radioLabel {
+        margin-right: 20px;
+        margin-bottom: 23.56px;
+        font-family: $regularFont;
+        font-size: $fontSizeBody;
+    }
+
+    // .card__toggleButton
+
+    &__toggleButton {
+        position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin: 0;
+    vertical-align: top;
+    background: #ffffff;
+    border: 1px solid #bbc1e1;
+    border-radius: 30px;
+    transition: 0.3s;
+    outline: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-right: 10px;
+    &:checked {
+        border: 1px solid $purpleBase;
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: 3px;
+        top: 3px;
+        width: 12px;
+        height: 12px;
+        background-color: color(primary-25);;//Нужно подумать как связать с миксинами цвета и управлять альфа каналом
+        ;
+        border-radius: 50%;
+        transform: translateX(0);
+        transition: 0.3s;
+    }
+    &:checked::after {
+        transform: translateX(calc(100% + 8px));
+        background: linear-gradient(180deg, $purpleBase 0%, $purpleGradient 100%);
+    }
+    & + label {
+        margin-bottom: 20px;
+        font-family: $regularFont;
+        font-size: $fontSizeBody;
+        color: color(primary-75);
+    }
+    }
+}

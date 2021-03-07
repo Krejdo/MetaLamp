@@ -1,17 +1,13 @@
-mixin inputCard(value,name)
-    .inputCard(class="inputCard" + value)
-        input(type="text" class="inputCard--style" placeholder=name)
+mixin inputCard(modifier,name)
+    input.inputCard(type="text" class="inputCard" + modifier placeholder=name)
 
 
-mixin buttonGradient(value,text,height)
-    .button-gradiend(class="" + value)
-         form
-             button(class="button-gradiend_style" + " " + height)
-                 span=text
-                 img(src="../blocks/regCard/arrow_forward.png", alt="")
+mixin buttonGradient(modifier,text)
+    button.buttonGradient(class="buttonGradient" + modifier)
+        span=text
+        img(src="../blocks/regCard/arrow_forward.png", alt="")
 
 
-mixin buttonOutGradient(value,text)
-    .button-bg-out
-        button(class="button-bg-out_style" + " " + value)
-            span=text
+mixin buttonGradientBorder(modifier,text)
+    button.buttonGradientBorder(class="buttonGradientBorder" + modifier)
+        span=text

@@ -1,30 +1,33 @@
-//------------------------Colors vars-----------------------//
+$darkShadeBase:       #1F2041;
+$purpleBase:          #BC9CFF;
+$greenBase:           #6FCF97;
+$white:               #ffffff;
 
-//--------Base color Website--------//
+$purpleGradient:      #8BA4F9;
+$greenGradient:       #66D2EA;
 
-$DarkShadeBaseColor: #1F2041;
-$PurpleBaseColor: #BC9CFF;
-$GreenBaseColor: #6FCF97;
+$boxShadowCard:       #cccccc;
 
+//===================================================//
 
-//----For button gradient color-----//
+@function color($name) {
+  @return var(--color-#{$name});
+}
 
-$PurpleGradientColor: #8BA4F9;
-$GreenGradientColor: #66D2EA;
+:root {
+  --color-primary: #{$darkShadeBase};
+  --color-primary-75: #{rgba($darkShadeBase, .75)};
+  --color-primary-50: #{rgba($darkShadeBase, .5)};
+  --color-primary-25: #{rgba($darkShadeBase, .25)};
+  --color-primary-5:  #{rgba($darkShadeBase, .05)};
+}
 
+//===================================================//
 
-//-----------Other colors-----------//
+$boldFont:     'Conv_Montserrat-Bold', sans-serif;
+$regularFont:  'Conv_Montserrat-Regular', sans-serif;
 
-$BoxShadowCard: #cccccc;
-
-//------------------------Colors vars-----------------------//
-
-//---------------------------Fonts--------------------------//
-
-$BoldFont: 'Conv_Montserrat-Bold', sans-serif;
-$RegularFont: 'Conv_Montserrat-Regular', sans-serif;
-
-$FontSizeH1: 24px;
-$FontSizeH2: 19px;
-$FontSizeH3: 12px;
-$FontSizeBody: 14px;
+$fontSizeH1:   24px;
+$fontSizeH2:   19px;
+$fontSizeH3:   12px;
+$fontSizeBody: 14px;

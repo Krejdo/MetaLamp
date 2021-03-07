@@ -15,14 +15,14 @@
 
 a {
     text-decoration: none;
-    font-family: $RegularFont;
-    font-size: $FontSizeBody;
-    color: rgba(31, 32, 65, 0.5);;
+    font-family: $regularFont;
+    font-size: $fontSizeBody;
+    color: color(primary-50);
 }
 
 a:nth-child(1) {
-    font-family: $BoldFont;
-    color: rgba(31, 32, 65, 0.75);
+    font-family: $boldFont;
+    color: color(primary-75);
 }
 
 .logo {

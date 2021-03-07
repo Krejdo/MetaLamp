@@ -1,31 +1,21 @@
 include ../../pug/mixins/mixins.pug
 
 .card
-     .card__title
-         h1  Регистрация аккаунта
-     +inputCard("--mb10","Имя")
-     +inputCard("--mb10","Фамилия")
-     .card__radioButton
-         input(type="radio" id="radio-1" name="radio")
-         label(for="radio-1" class="radio-label")
-             p Мужчина
-         input(type="radio" id="radio-2" name="radio")
-         label(for="radio-2" class="radio-label")
-             p Женщина
-     .card__titleInput
-          h3
-              p дата рождения
-     +inputCard("--mb20","ДД.ММ.ГГГГ")
-     .card__titleInput
-         h3
-              p данные для входа в сервис
-     +inputCard("--mb10","Email")
-     +inputCard("--mb10","Пароль")
-     .card__toggleButton
-          input(type="checkbox" id="toggle-button" class="toggle-button")
-          label(for="toggle-button" class="text") 
-              p.gray Получать спецпредложения
-     +buttonGradient("mb-30", "перейти к оплате", "")
-     .textButton
-         .textButton__caption Уже есть аккаунт на Toxin 
-         +buttonOutGradient("","войти")
+    h1.card__title Регистрация аккаунта
+    +inputCard("--mb10","Имя")
+    +inputCard("--mb10","Фамилия")
+    input.card__radioButton(type="radio" id="radio-1" name="radio")
+    label.card__radioLabel(for="radio-1") Мужчина
+    input.card__radioButton(type="radio" id="radio-2" name="radio")
+    label.card__radioLabel(for="radio-2") Женщина
+    h3.card__titleInput дата рождения
+    +inputCard("--mb20","ДД.ММ.ГГГГ")
+    h3.card__titleInput данные для входа в сервис
+    +inputCard("--mb10","Email")
+    +inputCard("--mb10","Пароль")
+    input.card__toggleButton(type="checkbox" id="toggleButton")
+    label(for="toggleButton" class="text") Получать спецпредложения
+    +buttonGradient("--mb30", "перейти к оплате", "")
+    .textButton
+        .textButton__caption Уже есть аккаунт на Toxin 
+        +buttonGradientBorder("","войти")

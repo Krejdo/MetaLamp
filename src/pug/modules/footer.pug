@@ -1,3 +1,8 @@
+- var navLinks__1 = [{ link: "#", text: "О нас"} , { link: "#", text: "Новости"} , { link: "#", text: "Служба поддержки"},{ link: "#", text: "Услуги"}]
+- var navLinks__2 = [{ link: "#", text: "О сервисе"} , { link: "#", text: "Наша команда"} , { link: "#", text: "Вакансии"},{ link: "#", text: "Инвесторы"}]
+- var navLinks__3 = [{ link: "#", text: "Соглашения"} , { link: "#", text: "Сообщества"} , { link: "#", text: "Связь с нами"}]
+
+
 footer.footer 
     .footer__column-logo
         .logo
@@ -8,38 +13,25 @@ footer.footer
             li 
                 h3 
                     a(href="#")  навигация
-            li 
-                a(href="#") О нас 
-            li 
-                a(href="#") Новости 
-            li 
-                a(href="#") Служба поддержки 
-            li 
-                a(href="#") Услуги 
+            for i in navLinks__1
+                li 
+                    a(href=i.link) #{i.text}
     .footer__column 
          ul 
             li 
                 h3 
                     a(href="#")  о нас
-            li 
-                a(href="#") О сервисе 
-            li 
-                a(href="#") Наша команда 
-            li 
-                a(href="#") Вакансии 
-            li 
-                a(href="#") Инвесторы 
+            for i in navLinks__2
+                li 
+                    a(href=i.link) #{i.text}
     .footer__column 
          ul 
             li 
                 h3 
                     a(href="#")  Служба поддержки
-            li 
-                a(href="#") Соглашения
-            li 
-                a(href="#") Сообщества 
-            li 
-                a(href="#") Связь с нами
+            for i in navLinks__3
+                li 
+                    a(href=i.link) #{i.text}
     .footer__column 
          ul 
             li 
