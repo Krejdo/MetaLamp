@@ -4,38 +4,42 @@
 
 
 footer.footer 
-    .footer__columnLogo
-        .logo
+    .footer__colLogo
+        .logo.logo--mb20
             a(href="#")
         p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-    .footer__column 
+    .footer__col 
         ul 
             li 
-                h3 
-                    a(href="#")  навигация
+                a(href="#") 
+                    h3.footer--darkText  навигация
             for i in navLinks__1
-                li 
+                li.footer--mb20  
                     a(href=i.link) #{i.text}
-    .footer__column 
+    .footer__col
          ul 
             li 
-                h3 
-                    a(href="#")  о нас
+                a(href="#") 
+                    h3.footer--darkText  о нас
             for i in navLinks__2
-                li 
+                li.footer--mb20 
                     a(href=i.link) #{i.text}
-    .footer__column 
+    .footer__col
          ul 
             li 
-                h3 
-                    a(href="#")  Служба поддержки
+                a(href="#") 
+                    h3.footer--darkText  служба поддержки
             for i in navLinks__3
-                li 
+                li.footer--mb20  
                     a(href=i.link) #{i.text}
-    .footer__column 
+    .footer__col.footer--maxWidth
          ul 
             li 
-                h3 
-                    a(href="#")  Подписка
+                a(href="#") 
+                    h3.footer--darkText  подписка
             p Получайте специальные предложения и новости сервиса
+            form
+                +inputCard("--minWidth","Email")
+                input.footer__inputImage(type="image" src="/img/arrow_forward_email.png")
+    .footer__social
     

@@ -3,8 +3,44 @@
     padding: 104px 140px 100px 140px;
     border-top: 1px solid black;
     display: flex;
-    &__columnLogo {
+    box-shadow: 0px 1px 0px $boxShadowCard;
+    justify-content: space-between;
+    &__colLogo {
         max-width: 260px;
+        margin-right: 40px;
+        font-size: $fontSizeBody;
+        color: color(primary-75);
+        line-height: 24px;
+    }
+    &__col {
+        margin-right: 20px; //изменить позже, сейчас что бы не прилипали блоки
+        & p {
+            font-size: $fontSizeBody;
+            color: color(primary-75);
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+    }
+    &--darkText {
+        text-transform: uppercase;
+        font-size: $fontSizeH3;
+        color: $darkShadeBase;
+        margin-bottom: 21px;
+    }
+    &--mb20 {
+        margin-bottom: 20px;
+    }
+    &--maxWidth {
+        max-width: 260px;
+        margin-right: 0; //подумать как поменять
+    }
+    &__inputImage {
+        position: relative;
+        vertical-align: middle;
+    }
+    &__social {
+        height: 70px;
+        box-shadow: 0px 10px 20px $boxShadowCard;
     }
 }
 

@@ -16,6 +16,9 @@
     &--mb20 {
         margin-bottom: 20px;
     }
+    &--minWidth {
+        width: 100%; //переделать, не правильно работает
+    }
     &::-webkit-input-placeholder {
         color: color(primary-25);
     }

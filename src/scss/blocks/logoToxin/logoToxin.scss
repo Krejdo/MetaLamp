@@ -1,0 +1,12 @@
+.logo {
+    background: url(/img/Logo.png);
+    width: 105.69px;
+    height: 40px;
+    & a {
+        display: block;
+        height: 100%;
+    }
+    &--mb20 {
+        margin-bottom: 20px;
+    }
+}
