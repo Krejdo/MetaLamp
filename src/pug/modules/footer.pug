@@ -38,8 +38,13 @@ footer.footer
                 a(href="#") 
                     h3.footer--darkText  подписка
             p Получайте специальные предложения и новости сервиса
-            form
+            form.footer__formSend
                 +inputCard("--minWidth","Email")
-                input.footer__inputImage(type="image" src="/img/arrow_forward_email.png")
-    .footer__social
+                input(type="submit" value="")
+.footer__social
+    p Copyright © 2018 Toxin отель. Все права зачищены.
+    .footer__link 
+        a(href="#").sprite.sprite-twitter
+        a(href="#").sprite.sprite-facebook
+        a(href="#").sprite.sprite-inst
     

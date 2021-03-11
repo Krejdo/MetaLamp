@@ -41,9 +41,54 @@
     &__social {
         height: 70px;
         box-shadow: 0px 10px 20px $boxShadowCard;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 140px 0 140px;
+        & p {
+            color: color(primary-75);
+            font-size: $fontSizeBody;        
+        }
+    }
+    &__link  {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    &__formSend {
+        position: relative;
+    }
+    input[type="submit"] {
+        background: url(../img/arrow_forward_email.png) no-repeat 50% 50%;
+        height: 44px;
+        width: 44px;
+        position: absolute;
+        right: -30px;
+        top: 1px;
+        border: none;
     }
 }
 
-li {
-    list-style-type: none;
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin-right: 20px;
+}
+
+.sprite-facebook {
+    width: 22px;
+    height: 22px;
+    background-position: -5px -5px;
+}
+
+.sprite-inst {
+    width: 22px;
+    height: 22px;
+    background-position: -37px -5px;
+}
+
+.sprite-twitter {
+    width: 24px;
+    height: 20px;
+    background-position: -5px -37px;
 }
