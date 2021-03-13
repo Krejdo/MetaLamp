@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -60,6 +61,11 @@ const plugins = () => {
                 {from: path.resolve(__dirname, 'src/assets') , to: path.resolve(__dirname, 'app')},
                 {from: path.resolve(__dirname, 'src/fonts') , to: path.resolve(__dirname, 'app/fonts')}
             ]
+        }),
+        new webpack.ProvidePlugin({
+            // identifier: path.resolve(path.join(__dirname, 'src/js/vendor/module')), //Не работает!
+            $: 'jquery',
+            jQuery: 'jquery',
         }),
     ];
 

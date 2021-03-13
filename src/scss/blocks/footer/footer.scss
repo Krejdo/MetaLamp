@@ -47,12 +47,16 @@
         padding: 0 140px 0 140px;
         & p {
             color: color(primary-75);
-            font-size: $fontSizeBody;        
+            font-size: $fontSizeBody;
         }
     }
     &__link  {
         display: flex;
         flex-wrap: nowrap;
+    }
+    &__link a:hover {
+        opacity: 50%;
+        transition: 0.2s;
     }
     &__formSend {
         position: relative;
