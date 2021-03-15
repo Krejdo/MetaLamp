@@ -63,7 +63,6 @@ const plugins = () => {
             ]
         }),
         new webpack.ProvidePlugin({
-            // identifier: path.resolve(path.join(__dirname, 'src/js/vendor/module')), //Не работает!
             $: 'jquery',
             jQuery: 'jquery',
         }),
@@ -160,9 +159,9 @@ module.exports = {
                 test: /\.(?:|gif|png|jpg|jpeg|svg)$/,
                 use: [{
                     loader: 'file-loader',
-                    options: {
-                        name: `./img/${filename('[ext]')}`
-                    }
+                    // options: {
+                    //     name: `./img/${filename('[ext]')}`
+                    // }
                 }],
             },
             {
