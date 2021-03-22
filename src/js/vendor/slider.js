@@ -338,11 +338,11 @@
                 "ui-slider-range": "ui-corner-all ui-widget-header"
             },
             distance: 0,
-            max: 100,
+            max: 15000,
             min: 0,
             orientation: "horizontal",
             range: !1,
-            step: 1,
+            step: 100,
             value: 0,
             values: null,
             change: null,
@@ -622,9 +622,9 @@ $( "#slider" ).slider({
 $("#slider").slider({
     animate: "slow",
     range: true,    
-    values: [ 30, 70 ],
+    values: [ 5000, 10000 ],
     slide : function(event, ui) {    
-        $("#result-slider").text(ui.values[ 0 ] + " - " + ui.values[ 1 ] );        
+        $("#result-slider").text(ui.values[ 0 ] + "₽" + " - " + ui.values[ 1 ] + "₽" );        
     }
 });
-$( "#result-slider" ).text($("#slider").slider("values", 0) + " - " + $("#slider").slider("values", 1));
+$( "#result-slider" ).text($("#slider").slider("values", 0) + "₽" + " - " + $("#slider").slider("values", 1) + "₽");
