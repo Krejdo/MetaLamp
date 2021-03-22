@@ -622,9 +622,9 @@ $( "#slider" ).slider({
 $("#slider").slider({
     animate: "slow",
     range: true,    
-    values: [ 10, 65 ],
+    values: [ 30, 70 ],
     slide : function(event, ui) {    
-        $("#result-slider").text( "от " + ui.values[ 0 ] + " до " + ui.values[ 1 ] );        
+        $("#result-slider").text(ui.values[ 0 ] + " - " + ui.values[ 1 ] );        
     }
 });
-$( "#result-polzunok" ).text("от " + $("#slider").slider("values", 0) + " до " + $("#polzunok").slider("values", 1));
+$( "#result-slider" ).text($("#slider").slider("values", 0) + " - " + $("#slider").slider("values", 1));
