@@ -179,7 +179,7 @@
 }
 .ui-widget-content {
 	border: 1px solid #dddddd;
-	background: #ffffff;
+	background: $white;
 	color: #333333;
 	a {
 		color: #333333;
@@ -189,25 +189,25 @@
 
 	.ui-state-default {
 		border: 2px solid #FFFFFF;
-		background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+		background: linear-gradient(180deg, $greenBase 0%, $greenGradient 100%);
 		font-weight: normal;
 		color: #454545;
 	}
 	.ui-state-hover {
 		border: 2px solid #FFFFFF;
-		background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+		background: linear-gradient(180deg, $greenBase 0%, $greenGradient 100%);
 		font-weight: normal;
 		color: #454545;
 	}
 	.ui-state-focus {
         border: 2px solid #FFFFFF;
-		background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+		background: linear-gradient(180deg, $greenBase 0%, $greenGradient 100%);
 		font-weight: normal;
 		color: #454545;
 	}
 	.ui-state-active {
         border: 2px solid #FFFFFF;
-		background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+		background: linear-gradient(180deg, $greenBase 0%, $greenGradient 100%);
 		font-weight: normal;
 		color: #454545;
 	}
@@ -545,18 +545,24 @@ a {
 	box-shadow: 0px 0px 5px #666666;
 }
 
-.slider-container {
+.slider {
     margin-top: 59px;
     margin-left: 30px;
 	width: 266px;
+	&__title {
+		margin-bottom: 23px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	h3 {
+		font-size: $fontSizeH3;
+		font-family: $boldFont;
+		text-transform: uppercase;
+	}
+	span {
+		font-size: $fontSizeH3;
+		text-transform: uppercase;
+		color: color(primary-50);
+	}
 }
-
-.title {
-	margin-bottom: 23px;
-	font-size: $fontSizeH3;
-	font-family: $boldFont;
-	text-transform: uppercase;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 }

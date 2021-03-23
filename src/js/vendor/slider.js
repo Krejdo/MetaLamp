@@ -624,7 +624,7 @@ $("#slider").slider({
     range: true,    
     values: [ 5000, 10000 ],
     slide : function(event, ui) {    
-        $("#result-slider").text(ui.values[ 0 ] + "₽" + " - " + ui.values[ 1 ] + "₽" );        
+        $("#result-slider").text(ui.values[ 0 ].toLocaleString() + "₽" + " - " + ui.values[ 1 ].toLocaleString() + "₽" );        
     }
 });
-$( "#result-slider" ).text($("#slider").slider("values", 0) + "₽" + " - " + $("#slider").slider("values", 1) + "₽");
+$( "#result-slider" ).text($("#slider").slider("values", 0.).toLocaleString() + "₽" + " - " + $("#slider").slider("values", 1).toLocaleString() + "₽");
