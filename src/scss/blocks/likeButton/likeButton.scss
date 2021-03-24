@@ -24,7 +24,7 @@
 	color: #1F204140;
 }
 
-.active {
+.activeBtn {
     border: solid 1px $purpleBase;
 	&::after {
 		background: url('../img/favorite.svg') no-repeat; 

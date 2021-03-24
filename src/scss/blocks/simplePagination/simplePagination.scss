@@ -1,0 +1,106 @@
+/**
+* CSS themes for simplePagination.js
+* Author: Flavius Matis - http://flaviusmatis.github.com/
+* URL: https://github.com/flaviusmatis/simplePagination.js
+*/
+
+.paginationContainer {
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+ul.simple-pagination {
+	list-style: none;
+}
+
+.simple-pagination {
+	display: block;
+	overflow: hidden;
+	padding: 0 5px 5px 0;
+	margin: 0;
+}
+
+.simple-pagination ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.simple-pagination li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+}
+span.ellipse.clickable {
+	cursor: pointer;
+}
+
+.ellipse input {
+	width: 3em;
+}
+
+/*------------------------------------*\
+	Light Theme Styles
+\*------------------------------------*/
+.light-theme span {
+	cursor:pointer;
+}
+
+.light-theme a, .light-theme span {
+	font-size: $fontSizeH3;
+	float: left;
+	font-size:14px;
+	line-height:38px;
+	font-weight: normal;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	margin: 0 5px 0 0;
+}
+
+.light-theme a:hover, .light-theme li:not(.disabled):not(.active) span:hover {
+	text-decoration: none;
+}
+
+.light-theme .current {
+	border-radius: 22px;
+	background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	color: #FFF;
+	border-color: #444;
+	cursor: default;
+}
+
+.light-theme .ellipse {
+	background: none;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	font-weight: bold;
+	cursor: default;
+}
+
+.next {
+	height: 40px;
+	width: 40px;
+	border-radius: 22px;
+	background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+	position: relative;
+	&::after {
+		content: ' ';
+		position: absolute ;
+		top: 52%;
+		left: 10px;
+		bottom: auto;   //Возможно позже подобрать другое решение по вставке стрелочки в кнопку
+		right: auto;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		background: url('../img/arrowForward.png') no-repeat ; 
+		width: 20px;
+		height: 20px;
+	}
+}
+
+.disabled {
+	display: none;
+}

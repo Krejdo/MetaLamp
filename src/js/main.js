@@ -5,4 +5,5 @@ import './vendor/like-dislike'
 import './vendor/rateBtn'
 import './vendor/slider'
 import './vendor/sliderTuchPunch'
+import './vendor/jquery.simplePagination'
 //import '../pug/page.pug';

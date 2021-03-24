@@ -15,7 +15,7 @@
 		readOnly:!1,
 		likeBtnClass:"like",
 		dislikeBtnClass:"dislike",
-		activeClass:"active",
+		activeClass:"activeBtn",
 		disabledClass:"disabled"};
 	i.prototype={
 		init:function(){
