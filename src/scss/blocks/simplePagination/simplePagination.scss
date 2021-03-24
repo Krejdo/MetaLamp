@@ -1,11 +1,5 @@
-/**
-* CSS themes for simplePagination.js
-* Author: Flavius Matis - http://flaviusmatis.github.com/
-* URL: https://github.com/flaviusmatis/simplePagination.js
-*/
-
 .paginationContainer {
-	margin-top: 30px;
+	margin-top: 30.5px;
 	margin-left: 30px;
 }
 
@@ -16,8 +10,8 @@ ul.simple-pagination {
 .simple-pagination {
 	display: block;
 	overflow: hidden;
-	padding: 0 5px 5px 0;
 	margin: 0;
+	margin-bottom: 11px;
 }
 
 .simple-pagination ul {
@@ -32,13 +26,10 @@ ul.simple-pagination {
 	margin: 0;
 	float: left;
 }
-span.ellipse.clickable {
-	cursor: pointer;
-}
 
-.ellipse input {
-	width: 3em;
-}
+// span.ellipse.clickable {
+// 	cursor: pointer;
+// }
 
 /*------------------------------------*\
 	Light Theme Styles
@@ -50,13 +41,11 @@ span.ellipse.clickable {
 .light-theme a, .light-theme span {
 	font-size: $fontSizeH3;
 	float: left;
-	font-size:14px;
-	line-height:38px;
+	line-height:39px;
 	font-weight: normal;
 	text-align: center;
 	width: 40px;
 	height: 40px;
-	margin: 0 5px 0 0;
 }
 
 .light-theme a:hover, .light-theme li:not(.disabled):not(.active) span:hover {
@@ -76,8 +65,8 @@ span.ellipse.clickable {
 	border: none;
 	border-radius: 0;
 	box-shadow: none;
-	font-weight: bold;
 	cursor: default;
+	color: color(primary-50);
 }
 
 .next {
@@ -89,13 +78,13 @@ span.ellipse.clickable {
 	&::after {
 		content: ' ';
 		position: absolute ;
-		top: 52%;
-		left: 10px;
+		top: 53%;
+		left: 11px;
 		bottom: auto;   //Возможно позже подобрать другое решение по вставке стрелочки в кнопку
 		right: auto;
 		transform: translateY(-50%);
 		-webkit-transform: translateY(-50%);
-		background: url('../img/arrowForward.png') no-repeat ; 
+		background: url('../img/arrow_forward.svg') no-repeat ; 
 		width: 20px;
 		height: 20px;
 	}
@@ -103,4 +92,14 @@ span.ellipse.clickable {
 
 .disabled {
 	display: none;
+}
+
+.active {
+	& span {
+		font-family: $boldFont;
+	}
+}
+
+li .page-link {
+	line-height: 38.5px;
 }
