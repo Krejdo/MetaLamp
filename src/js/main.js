@@ -1,9 +1,9 @@
 import 'jquery';
 import '../scss/main.scss';
 import '../pug/index.pug';
-import './vendor/like-dislike'
-import './vendor/rateBtn'
-import './vendor/slider'
-import './vendor/sliderTuchPunch'
-import './vendor/jquery.simplePagination'
+import '../blocks/likeButton/like-dislike'
+import '../blocks/rateBtn/rateBtn'
+import '../blocks/slider/slider'
+import '../blocks/slider/sliderTuchPunch'
+import '../blocks/simplePagination/jquery.simplePagination'
 //import '../pug/page.pug';
