@@ -1,0 +1,106 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+ul {
+    list-style-type: none;
+    border-radius: 0 0 4px 4px;
+    border: 1px solid color(primary-50);
+    // margin: 0;
+    // padding: 0;
+    top:45px;
+    // right:0px;
+    // width: 200px;
+    // background-color: white;
+    // font-weight:bold;
+    // position: absolute;
+    display: none;
+    z-index: 1;
+}
+li a {
+    color: #000;
+    text-decoration: none;
+}
+li {
+    padding: 15px 16px;
+    // border-bottom: 1px solid #e5e5e5;
+}
+li:last-child {
+    border-bottom: none;
+}
+
+.button{
+    width: 266px;
+    height: 44px;
+    border-radius: 4px 4px 0 0;
+    font-weight:bold;
+    border: 1px solid color(primary-50);
+}
+// .button::after{
+//     content: ' ';
+//     position: absolute ;
+//     top: 52%;
+//     left: 290px;
+//     bottom: auto;   //Возможно позже подобрать другое решение по вставке стрелочки в кнопку
+//     right: auto;
+//     transform: translateY(-50%);
+//     -webkit-transform: translateY(-50%);
+//     background: url('../img/expand_more.svg') no-repeat ; 
+//     width: 20px;
+//     height: 20px;
+// }
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+.num-block {
+    width: 100%;
+}
+
+.skin-2 .num-in {
+	// background: #FFFFFF;
+	// box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+	border-radius: 25px;
+	height: 30px;
+	width: 90px;
+    float: right;
+}
+
+.skin-2 .num-in	span {
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: left;
+    position: relative;
+    border: 1px solid color(primary-25);
+    border-radius: 22px;
+}
+
+.skin-2 .num-in span:before, .skin-2 .num-in span:after {
+    content: '';
+    position: absolute;
+    background-color: #667780;
+    height: 2px;
+    width: 10px;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -5px;
+}
+
+.skin-2 .num-in span.plus:after {
+  transform: rotate(90deg);
+}
+
+.skin-2 .num-in input {
+    float: left;
+    width: 20%;
+    height: 30px;
+    border: none;
+    text-align: center;
+}

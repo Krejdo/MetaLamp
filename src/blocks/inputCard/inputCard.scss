@@ -1,12 +1,12 @@
 .inputCard {
-    width: 288px;
-    height: 18px;
+    width: 289px;
+    height: 16px;
     border: 1px solid rgba(31, 32, 65, 0.25);//Нужно подумать как связать с миксинами цвета и управлять альфа каналом
     border-radius: 4px;
     padding: 0;
     font-family: $regularFont;
     font-size: $fontSizeBody;
-    padding: 13px 15px 13px 15px;
+    padding: 13px 15px 13px 14px;
     &--mb10 {
         margin-bottom: 10px;
     }
@@ -21,5 +21,14 @@
     }
     &:focus {
         border: 1px solid color(primary-50);
+    }
+    &:hover {
+        border: 1px solid color(primary-50);
+    }
+    &:hover::placeholder {
+        color: color(primary-75);
+    }
+    &:focus::placeholder {
+        color: color(primary-75);
     }
 }
