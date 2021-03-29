@@ -2,7 +2,7 @@
     position: relative;
     display: inline-block;
 }
-ul {
+.dropdown__list {
     list-style-type: none;
     border-radius: 0 0 4px 4px;
     border: 1px solid color(primary-50);
@@ -16,26 +16,29 @@ ul {
     // position: absolute;
     display: none;
     z-index: 1;
+    border-top: hidden;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
-li a {
+.dropdown__item a {
     color: #000;
     text-decoration: none;
 }
-li {
+.dropdown__item {
     padding: 15px 16px;
     // border-bottom: 1px solid #e5e5e5;
 }
-li:last-child {
+.dropdown__item:last-child {
     border-bottom: none;
 }
 
-.button{
+.dropdown__button{
     width: 266px;
     height: 44px;
     border-radius: 4px 4px 0 0;
     font-weight:bold;
     border: 1px solid color(primary-50);
 }
+
 // .button::after{
 //     content: ' ';
 //     position: absolute ;
@@ -50,13 +53,7 @@ li:last-child {
 //     height: 20px;
 // }
 
-* {
-    padding: 0;
-    margin: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
+//========================================================//
 
 .num-block {
     width: 100%;
@@ -71,14 +68,33 @@ li:last-child {
     float: right;
 }
 
-.skin-2 .num-in	span {
+// .skin-2 .num-in	span {
+//     width: 30px;
+//     height: 30px;
+//     display: block;
+//     float: left;
+//     position: relative;
+//     border-radius: 22px;
+// }
+
+.minus {
     width: 30px;
     height: 30px;
     display: block;
     float: left;
     position: relative;
-    border: 1px solid color(primary-25);
     border-radius: 22px;
+    border: 1px solid color(primary-50);
+}
+
+.plus {
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: left;
+    position: relative;
+    border-radius: 22px;
+    border: 1px solid color(primary-50);
 }
 
 .skin-2 .num-in span:before, .skin-2 .num-in span:after {
@@ -103,4 +119,8 @@ li:last-child {
     height: 30px;
     border: none;
     text-align: center;
+}
+
+.minus.dis {
+    border: 1px solid color(primary-25);
 }

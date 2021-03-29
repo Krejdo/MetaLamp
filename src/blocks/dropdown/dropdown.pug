@@ -1,24 +1,25 @@
 .dropdown(style='margin-left:30px;margin-top:30px;')
-  .button  My Setting 
-  ul
-    li
+  .dropdown__button  
+    p#values My Setting 
+  .dropdown__list
+    .dropdown__item
       .num-block.skin-2
         | спальни
         .num-in
           span.minus.dis
-          input.in-num(type='text' value='1' readonly='')
+          input.in-num(type='text' value='0' readonly='')
           span.plus
-    li
+    .dropdown__item
       .num-block.skin-2
         | кровати
         .num-in
           span.minus.dis
-          input.in-num(type='text' value='1' readonly='')
+          input.in-num(type='text' value='0' readonly='')
           span.plus
-    li
+    .dropdown__item
       .num-block.skin-2
         | ванные комнаты
         .num-in
           span.minus.dis
-          input.in-num(type='text' value='1' readonly='')
+          input.in-num(type='text' value='0' readonly='')
           span.plus
