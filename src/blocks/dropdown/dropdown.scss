@@ -55,72 +55,31 @@
 
 //========================================================//
 
-.num-block {
-    width: 100%;
+.handle-counter { overflow: hidden; }
+
+.handle-counter .counter-minus,  .handle-counter .counter-plus,  .handle-counter input {
+  float: left;
+  text-align: center;
 }
 
-.skin-2 .num-in {
-	// background: #FFFFFF;
-	// box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 25px;
-	height: 30px;
-	width: 90px;
-    float: right;
+.handle-counter .counter-minus,  .handle-counter .counter-plus { text-align: center; }
+
+.handle-counter input {
+  width: 50px;
+  border: none;
 }
 
-// .skin-2 .num-in	span {
-//     width: 30px;
-//     height: 30px;
-//     display: block;
-//     float: left;
-//     position: relative;
-//     border-radius: 22px;
-// }
-
-.minus {
-    width: 30px;
-    height: 30px;
-    display: block;
-    float: left;
-    position: relative;
-    border-radius: 22px;
-    border: 1px solid color(primary-50);
+.btn {
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  color: #fff;
 }
 
-.plus {
-    width: 30px;
-    height: 30px;
-    display: block;
-    float: left;
-    position: relative;
-    border-radius: 22px;
-    border: 1px solid color(primary-50);
+.btn:disabled, .btn:disabled:hover {
+  background-color: darkgrey;
+//   cursor: not-allowed;
 }
 
-.skin-2 .num-in span:before, .skin-2 .num-in span:after {
-    content: '';
-    position: absolute;
-    background-color: #667780;
-    height: 2px;
-    width: 10px;
-    top: 50%;
-    left: 50%;
-    margin-top: -1px;
-    margin-left: -5px;
-}
+.btn-primary { background-color: #009dda; }
 
-.skin-2 .num-in span.plus:after {
-  transform: rotate(90deg);
-}
-
-.skin-2 .num-in input {
-    float: left;
-    width: 20%;
-    height: 30px;
-    border: none;
-    text-align: center;
-}
-
-.minus.dis {
-    border: 1px solid color(primary-25);
-}
+.btn-primary:hover, .btn-primary:focus { background-color: #0486b9; }

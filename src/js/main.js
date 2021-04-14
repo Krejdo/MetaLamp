@@ -6,5 +6,6 @@ import '../blocks/rateBtn/rateBtn'
 import '../blocks/slider/slider'
 import '../blocks/slider/sliderTuchPunch'
 import '../blocks/simplePagination/jquery.simplePagination'
+import '../blocks/dropdown/handleCounter'
 import '../blocks/dropdown/dropdown'
 //import '../pug/page.pug';
