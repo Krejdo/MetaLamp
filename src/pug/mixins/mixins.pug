@@ -11,3 +11,13 @@ mixin buttonGradient(modifier,text)
 mixin buttonGradientBorder(modifier,text)
     button.buttonGradientBorder(class="buttonGradientBorder" + modifier)
         span=text
+
+mixin colorBox({modifier,title,subtitle})
+    .containerBox 
+        .colorBox(class="colorBox" + modifier)
+        .colorBox__text
+            h2.colorBox__title=title 
+            p.colorBox__subtitle=subtitle
+
+mixin textSize({})
+    .containerText
