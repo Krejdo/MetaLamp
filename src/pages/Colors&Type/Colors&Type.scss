@@ -1,3 +1,16 @@
+.colorTypesWrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 140px;
+  padding: 0 20px 0 20px;
+}
+
+.textCard {
+  max-width: 40%;
+}
+
 .containerBox {
     display: flex;
     margin-bottom: 20px;
@@ -24,25 +37,94 @@
             font-size: $fontSizeH2;
         }
     }
-    &-darkShade {
+    &_darkShade {
         background-color: $darkShadeBase;
     }
-    &-darkShade75 {
+    &_darkShade75 {
         background-color: color(primary-75);
     }
-    &-darkShade50 {
+    &_darkShade50 {
         background-color: color(primary-50);
     }
-    &-darkShade25 {
+    &_darkShade25 {
         background-color: color(primary-25);
     }
-    &-darkShade5 {
+    &_darkShade5 {
         background-color: color(primary-5);
     }
-    &-purple {
+    &_purple {
         background-color: $purpleBase;
     }
-    &-green {
+    &_green {
         background-color: $greenBase;
     }
+}
+
+.type {
+  display: flex;
+  margin-bottom: 51px;
+
+  &__head {
+    display: inline-block;
+    color: color(primary-25);
+    text-align: right;
+    flex-basis: 60px;
+    flex-shrink: 0;
+
+    &_font_large {
+      font-size: 1.5rem;
+      line-height: 1.2rem;
+      margin-top: 5px;
+    }
+
+    &_font_medium {
+      font-size: 1.1875rem;
+      line-height: 1.21rem;
+      margin-top: 3px;
+    }
+
+    &_font_small {
+      font-size: 0.75rem;
+      line-height: 0.3rem;
+      margin-top: 5px;
+    }
+  }
+
+  &__body {
+    padding-left: 30px;
+  }
+
+  &__text {
+    font-family: $boldFont;
+
+    &_font_large {
+      font-size: $fontSizeH1;
+      line-height: 1.875rem;
+      color: $darkShadeBase;
+      margin: 0;
+    }
+
+    &_font_medium {
+      font-size: $fontSizeH2;
+      line-height: 1.5rem;
+      color: $darkShadeBase;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    &_font_small {
+      font-family: $boldFont;
+      text-transform: uppercase;
+      color: $darkShadeBase;
+      font-size: $fontSizeH3;
+      margin: 0;
+    }
+
+    &_font_default {
+      font-family: $regularFont;
+      color: color(primary-75);
+      font-size: $fontSizeBody;
+      line-height: 1.5rem;
+    }
+  }
 }

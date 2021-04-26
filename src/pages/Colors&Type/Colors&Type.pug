@@ -1,41 +1,68 @@
-+colorBox({
-    modifier: '-darkShade',
-    title: 'Dark Shade 100%',
-    subtitle: '#1F2041'
-})
+.colorTypesWrapper
+  .colorCard
+    +colorBox({
+        modifier: '_darkShade',
+        title: 'Dark Shade 100%',
+        subtitle: '#1F2041'
+    })
 
-+colorBox({
-    modifier: '-darkShade75',
-    title: 'Dark Shade 75%',
-    subtitle: '#1F2041'
-})
+    +colorBox({
+        modifier: '_darkShade75',
+        title: 'Dark Shade 75%',
+        subtitle: '#1F2041'
+    })
 
-+colorBox({
-    modifier: '-darkShade50',
-    title: 'Dark Shade 50%',
-    subtitle: '#1F2041'
-})
+    +colorBox({
+        modifier: '_darkShade50',
+        title: 'Dark Shade 50%',
+        subtitle: '#1F2041'
+    })
 
-+colorBox({
-    modifier: '-darkShade25',
-    title: 'Dark Shade 25%',
-    subtitle: '#1F2041'
-})
+    +colorBox({
+        modifier: '_darkShade25',
+        title: 'Dark Shade 25%',
+        subtitle: '#1F2041'
+    })
 
-+colorBox({
-    modifier: '-darkShade5',
-    title: 'Dark Shade 5%',
-    subtitle: '#1F2041'
-})
+    +colorBox({
+        modifier: '_darkShade5',
+        title: 'Dark Shade 5%',
+        subtitle: '#1F2041'
+    })
 
-+colorBox({
-    modifier: '-purple',
-    title: 'Purple',
-    subtitle: '#BC9CFF'
-})
+    +colorBox({
+        modifier: '_purple',
+        title: 'Purple',
+        subtitle: '#BC9CFF'
+    })
 
-+colorBox({
-    modifier: '-green',
-    title: 'Green',
-    subtitle: '#6FCF97'
-})
+    +colorBox({
+        modifier: '_green',
+        title: 'Green',
+        subtitle: '#6FCF97'
+    })
+
+  .textCard
+    +typeText({
+      title: 'H1',
+      text: 'This one is the sub-section or widget title',
+      size: 'large'
+    })
+
+    +typeText({
+      title: 'H2',
+      text: 'Next one is the item title inside widgets',
+      size: 'medium'
+    })
+
+    +typeText({
+      title: 'H3',
+      text: 'This is a label or CTA text',
+      size: 'small'
+    })
+
+    +typeText({
+      title: 'Body',
+      text: 'This is the body text which is used for most of the design, like paragraphs, lists, etc.',
+      size: 'default'
+    })
