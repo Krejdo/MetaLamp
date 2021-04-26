@@ -2,8 +2,12 @@
 @import "./utils/fonts.scss";
 @import "./utils/vars.scss";
 @import "./utils/base.scss";
+
+
 @import "../pug/modules/header/header.scss";
 @import "../pug/modules/footer/footer.scss";
+
+
 @import "../blocks/card/card.scss";
 @import "../blocks/inputCard/inputCard.scss";
 @import "../blocks/textButton/textButton.scss";
@@ -16,5 +20,8 @@
 @import "../pug/modules/cardRoom/cardRoom.scss";
 @import "../blocks/logoToxin/logoToxin.scss";
 @import "../blocks/slider/slider.scss";
+@import "../blocks/logoKit/logoKit.scss";
 @import "../blocks/dropdown/dropdown.scss";
+
+
 @import "../pages/Colors&Type/Colors&Type.scss";

@@ -72,19 +72,19 @@
     flex-shrink: 0;
 
     &_font_large {
-      font-size: 1.5rem;
+      font-size: $fontSizeH1;
       line-height: 1.2rem;
       margin-top: 5px;
     }
 
     &_font_medium {
-      font-size: 1.1875rem;
+      font-size: $fontSizeH2;
       line-height: 1.21rem;
       margin-top: 3px;
     }
 
     &_font_small {
-      font-size: 0.75rem;
+      font-size: $fontSizeH3;
       line-height: 0.3rem;
       margin-top: 5px;
     }
