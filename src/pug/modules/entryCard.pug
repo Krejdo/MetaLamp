@@ -2,9 +2,20 @@ include ../../pug/mixins/mixins.pug
 
 .card
     h1.card__title Войти
-    +inputCard("--mb10","Email")
-    +inputCard("--mb20","Пароль")
-    +buttonGradient("--mb30", "войти", "")
+    +inputCard({
+        modifier: "--mb10",
+        text: "Email"
+        })
+    +inputCard({
+        modifier: "--mb20",
+        text: "Пароль"
+        })
+    +buttonGradient({
+        modifier: "--mb30",
+        text: "войти"
+        })
     .textButton
         .textButton__caption Нет аккаунта на Toxin?
-        +buttonGradientBorder("","создать")
+        +buttonGradientBorder({
+        text: "создать"
+        })

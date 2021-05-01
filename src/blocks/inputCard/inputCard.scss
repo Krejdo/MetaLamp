@@ -31,10 +31,10 @@
     &:focus::placeholder {
         color: color(primary-75);
     }
-    &_active::placeholder {
+    &--active::placeholder {
         color: color(primary-75);
     }
-    &_active {
+    &--active {
         border: 1px solid color(primary-50);
     }
 }

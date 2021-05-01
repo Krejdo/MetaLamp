@@ -2,13 +2,13 @@ mixin inputCard({modifier,text})
     input.inputCard(type="text" class="inputCard" + modifier placeholder=text)
 
 
-mixin buttonGradient(modifier,text)
+mixin buttonGradient({modifier,text})
     button.buttonGradient(class="buttonGradient" + modifier)
         span=text
         img(src="../blocks/regCard/arrow_forward.png", alt="")
 
 
-mixin buttonGradientBorder(modifier,text)
+mixin buttonGradientBorder({modifier,text})
     button.buttonGradientBorder(class="buttonGradientBorder" + modifier)
         span=text
 
