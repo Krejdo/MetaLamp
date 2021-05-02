@@ -1,4 +1,29 @@
 .inputContainer {
     display: flex;
     flex-direction: column;
+    max-width: 320px;
+}
+
+.dateDropdown {
+    width: 100%;
+    display: flex;
+}
+
+.dateDropdown .dropdown {
+    width: 80%;
+}
+
+.titleForm input[type="submit"]{
+    background: url(../img/arrow_forward_email.png) no-repeat 50% 50%;
+    height: 44px;
+    width: 44px;
+    position: absolute;
+    right: -30px;
+    top: 1px;
+    border: none;
+}
+
+.checkContainer {
+    display: flex;
+    flex-direction: column;
 }

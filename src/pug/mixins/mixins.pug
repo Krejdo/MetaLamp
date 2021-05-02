@@ -40,3 +40,11 @@ mixin typeText({title, text, size})
 
 mixin logoKit()
   .logoKit
+
+mixin dropDown({text})
+  .dropdown
+    .dropdown__button= text
+
+mixin checkBox({text, checked=false, id})
+  input(type="checkbox" id=id class="customCheckbox" checked=checked)
+  label(for=id)= text
