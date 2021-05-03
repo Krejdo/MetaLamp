@@ -50,6 +50,9 @@
           text: "Email"})
       input(type="submit" value="")
 
+
+
+
 .checkContainer
   .titleCheckBox Checkbox Buttons
   +checkBox({
@@ -68,4 +71,42 @@
       checked: true,
       id: 'check3'
   })
-    
+
+
+  .titleRadioButton Radio Buttons
+    +radioButton({
+      id: 'radio-1',
+      text: 'Мужчина'
+    })
+
+    +radioButton({
+      id: 'radio-2',
+      text: 'Женщина'
+    })
+
+
+  .titleToggle Toggle
+    +toggleButton({
+      id: 'toggleButton',
+      text: 'Получать спецпредложения'
+    })
+
+    +toggleButton({
+      id: 'toggleButton2',
+      text: 'Получать спецпредложения'
+    })
+
+  
+  .titleLikeButton like button
+    +likeButton({
+      likes: '2',
+      modifier: true
+    })
+
+    +likeButton({
+      likes: '12'
+    })
+
+
+    .titleRate rate button
+      +rateBtn({})
