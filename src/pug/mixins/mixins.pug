@@ -1,24 +1,29 @@
-mixin inputCard({modifier,text})
-    input.inputCard(type="text" class="inputCard" + modifier placeholder=text)
+mixin inputCard({modifier, text})
+  input.inputCard(type="text" class="inputCard" + modifier placeholder=text)
 
 
-mixin buttonGradient({modifier,text})
-    button.buttonGradient(class="buttonGradient" + modifier)
-        span=text
-        img(src="../blocks/regCard/arrow_forward.png", alt="")
+mixin buttonGradient({text, hover=false, arrow=false})
+  if hover == true
+    button.buttonGradient.buttonGradient--hover
+      span=text
+  else if arrow == true
+    button.buttonGradient.buttonGradient--arrow
+      span=text
+  else
+    button.buttonGradient
+      span=text
+
+mixin buttonGradientBorder({modifier, text})
+  button.buttonGradientBorder(class="buttonGradientBorder" + modifier)
+    span=text
 
 
-mixin buttonGradientBorder({modifier,text})
-    button.buttonGradientBorder(class="buttonGradientBorder" + modifier)
-        span=text
-
-
-mixin colorBox({modifier,title,subtitle})
-    .containerBox 
-        .colorBox(class="colorBox" + modifier)
-        .colorBox__text
-            h2.colorBox__title=title 
-            p.colorBox__subtitle=subtitle
+mixin colorBox({modifier, title, subtitle})
+  .containerBox 
+    .colorBox(class="colorBox" + modifier)
+      .colorBox__text
+        h2.colorBox__title=title 
+        p.colorBox__subtitle=subtitle
 
 
 mixin typeText({title, text, size})
@@ -76,9 +81,24 @@ mixin likeButton({likes, modifier=false})
 
 mixin rateBtn({})
   select.star-rating
-  option(value="5")
-  option(value="4")
-  option(value="3")
-  option(value="2")
-  option(value="1")
+    option(value="5")
+    option(value="4")
+    option(value="3")
+    option(value="2")
+    option(value="1")
+
+mixin slider({text})
+  .slider
+    .slider__title 
+      h3=text
+      span#result-slider
+    #slider
+
+mixin linkText({text, hover=false})
+  if hover == true 
+    .linkText.linkText--active
+      h3=text
+  else
+    .linkText
+      h3=text
     

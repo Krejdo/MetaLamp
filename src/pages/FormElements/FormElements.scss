@@ -1,3 +1,8 @@
+.contentContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .inputContainer {
     display: flex;
     flex-direction: column;
@@ -26,4 +31,20 @@
 .checkContainer {
     display: flex;
     flex-direction: column;
+}
+
+.titleRate {
+    display: flex;
+}
+
+.buttonStock {
+  width: 99px;
+}
+
+.buttonTitle {
+    display: flex;
+}
+
+.linkTextContainer {
+    display: flex;
 }

@@ -5,19 +5,6 @@
     border: none;
     background: linear-gradient(180deg, $purpleBase 0%, $purpleGradient 100%);
     position: relative;
-    &::after {
-        content: ' ';
-        position: absolute ;
-        top: 52%;
-        left: 290px;
-        bottom: auto;   //Возможно позже подобрать другое решение по вставке стрелочки в кнопку
-        right: auto;
-        transform: translateY(-50%);
-        -webkit-transform: translateY(-50%);
-        background: url('../img/arrow_forward.svg') no-repeat ; 
-        width: 20px;
-        height: 20px;
-    }
     &:hover {
         opacity: 50%;
         transition: 0.2s;
@@ -34,5 +21,22 @@
     }
     &--mb30 {
         margin-bottom: 30px;
+    }
+    &--hover {
+        opacity: 50%;
+        transition: 0.2s;
+    }
+    &--arrow::after {
+        content: ' ';
+        position: absolute ;
+        top: 52%;
+        left: 94%;
+        bottom: auto;   //Возможно позже подобрать другое решение по вставке стрелочки в кнопку
+        right: auto;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        background: url('../img/arrow_forward.svg') no-repeat ; 
+        width: 20px;
+        height: 20px;
     }
 }

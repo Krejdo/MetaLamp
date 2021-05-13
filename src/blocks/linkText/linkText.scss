@@ -1,0 +1,11 @@
+.linkText {
+    color: $purpleBase;
+    font-size: $fontSizeH3;
+    &--active {
+        color: color(primary-50);
+    }
+}
+
+.linkText:hover {
+    color: color(primary-50);
+}
