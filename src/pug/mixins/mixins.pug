@@ -22,8 +22,8 @@ mixin colorBox({modifier, title, subtitle})
   .containerBox 
     .colorBox(class="colorBox" + modifier)
       .colorBox__text
-        h2.colorBox__title=title 
-        p.colorBox__subtitle=subtitle
+        h2.colorBox__title= title 
+        p.colorBox__subtitle= subtitle
 
 
 mixin typeText({title, text, size})
@@ -56,32 +56,32 @@ mixin dropDown({text})
 
 
 mixin checkBox({text, checked=false, id})
-  input(type="checkbox" id=id class="customCheckbox" checked=checked)
+  input(type="checkbox" id=id class="customCheckbox" checked= checked)
   label(for=id)= text
 
 
 mixin radioButton({id, text})
   input.card__radioButton(type="radio" id=id name="radio")
-  label.card__radioLabel(for=id)=text
+  label.card__radioLabel(for=id)= text
 
 
-mixin toggleButton({id, text})
-  input.card__toggleButton(type="checkbox" id=id)
-  label(for=id class="text")=text
+mixin toggleButton({id, text, checked= false})
+  input.card__toggleButton(type="checkbox" id= id checked= checked)
+  label(for= id class="text")= text
 
 
 mixin likeButton({likes, modifier=false})
   #rating 
   if modifier == true
     button(class='like activeBtn')
-      span.likes=likes
+      span.likes= likes
   else 
     button.like
-      span.likes=likes
+      span.likes= likes
 
-mixin rateBtn({})
+mixin rateBtn({quantity})
   select.star-rating
-    option(value="5")
+    option(value= quantity)
     option(value="4")
     option(value="3")
     option(value="2")
@@ -97,8 +97,8 @@ mixin slider({text})
 mixin linkText({text, hover=false})
   if hover == true 
     .linkText.linkText--active
-      h3=text
+      h3= text
   else
     .linkText
-      h3=text
+      h3= text
     
