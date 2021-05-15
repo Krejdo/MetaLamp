@@ -60,8 +60,8 @@ mixin checkBox({text, checked=false, id})
   label(for=id)= text
 
 
-mixin radioButton({id, text})
-  input.card__radioButton(type="radio" id=id name="radio")
+mixin radioButton({id, text, checked=false})
+  input.card__radioButton(type="radio" id=id name="radio" checked= checked)
   label.card__radioLabel(for=id)= text
 
 

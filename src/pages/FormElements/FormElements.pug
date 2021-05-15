@@ -2,8 +2,8 @@
   .inputColumn
     .inputItem
       .titleForm 
-        h3 Text Field
-        p Default
+        h3.titleText Text Field
+        p.titleTextGray Default
       +inputCard({
           text: 'Email'
       })
@@ -11,8 +11,8 @@
 
     .inputItem
       .titleForm 
-        h3 Text Field
-        p Hover / Focus
+        h3.titleText Text Field
+        p.titleTextGray Hover / Focus
       +inputCard({
           text: 'This is pretty awesome',
           modifier: '--active'
@@ -21,7 +21,7 @@
 
     .inputItem
       .titleForm 
-        h3 Dropdown
+        h3.titleText Dropdown
       +dropDown({
           text: 'Сколько гостей'
       })
@@ -29,32 +29,34 @@
 
     .inputItem
       .titleForm 
-        h3 masked text field
+        h3.titleText masked text field
       +inputCard({
           text: 'ДД.ММ.ГГГГ'
       })
 
 
     .dateDropdown 
-      .titleForm 
-      h3 date Dropdown
+      .dateWrapper
+        .titleForm 
+          h3.titleText date Dropdown
         +dropDown({
             text: 'ДД.ММ.ГГГГ'
         })
-      .titleForm 
-      h3 date Dropdown
+      .dateWrapper
+        .titleForm 
+          h3.titleText date Dropdown
         +dropDown({
             text: '19.08.2019'
         })
-
-
-    .titleForm 
-    h3 filter date dropdown
+    .wrapperForm
+      .titleForm 
+        h3.titleText filter date dropdown
       +dropDown({
           text: '19 авг - 23 авг'
         })
-    .titleForm 
-    h3 subscription text field
+    .wrapperForm
+      .titleForm 
+        h3.titleText subscription text field
       form.footer__formSend
         +inputCard({
             modifier: "--minWidth",
@@ -65,121 +67,132 @@
 
 
   .checkColumn
-    .titleCheckBox 
-      h3 Checkbox Buttons
-    +checkBox({
-        text: "Можно курить",
-        id: 'check'
-    })
-
-    +checkBox({
-        text: "Можно с питомцами",
-        checked: true,
-        id: 'check2'
-    })
-
-    +checkBox({
-        text: "Можно пригласить гостей (до 10 человек)",
-        checked: true,
-        id: 'check3'
-    })
-
-
-    .titleRadioButton 
-      h3 Radio Buttons
-      +radioButton({
-        id: 'radio-1',
-        text: 'Мужчина'
-      })
-
-      +radioButton({
-        id: 'radio-2',
-        text: 'Женщина'
-      })
-
-
-    .titleToggle 
-      h3 Toggle
-      +toggleButton({
-        id: 'toggleButton',
-        text: 'Получать спецпредложения',
-        checked: true 
-      })
-
-      +toggleButton({
-        id: 'toggleButton2',
-        text: 'Получать спецпредложения'
-      })
-
-    
-    .titleLikeButton 
-      h3 like button
-      +likeButton({
-        likes: '2',
-        modifier: true
-      })
-
-      +likeButton({
-        likes: '12'
-      })
-
-      .titleRate 
-        h3 rate button
-        +rateBtn({
-          quantity: "4"
+    .checkBoxWrapper
+      .titleCheckBox 
+        h3.titleText Checkbox Buttons
+      .checkBoxItem
+        +checkBox({
+            text: "Можно курить",
+            id: 'check'
         })
-        +rateBtn({
-          quantity: "3"
+      .checkBoxItem
+        +checkBox({
+            text: "Можно с питомцами",
+            checked: true,
+            id: 'check2'
+        })
+      .checkBoxItem
+        +checkBox({
+            text: "Можно пригласить гостей (до 10 человек)",
+            checked: true,
+            id: 'check3'
         })
 
-
-
-
-  .buttonColumn
-    +slider({
-      text: 'Range Slider'
-    })
-
-    .buttonTitle 
-      h3 buttons
-      .buttonStock
-        +buttonGradient({
-          text: "CLICK ME"
-        })
-      .buttonStock
-        +buttonGradient({
-          text: "CLICK ME",
-          hover: true
-        })
-      .buttonStock 
-        +buttonGradientBorder({
-          text: 'CLICK ME'
-        })
-      .buttonStock 
-        +buttonGradientBorder({
-          text: 'CLICK ME',
-          modifier: '--hover'
+    .radioButtonWrapper
+      .titleRadioButton 
+        .titleCheckBox
+          h3.titleText Radio Buttons
+        +radioButton({
+          id: 'radio-1',
+          text: 'Мужчина',
+          checked: true
         })
 
-    .linkTextContainer
-      +linkText({
-        text: 'CLICK ME'
-      })
+        +radioButton({
+          id: 'radio-2',
+          text: 'Женщина'
+        })
 
-      +linkText({
-        text: 'CLICK ME',
-        hover: true
-      }) 
-
-    .buttonGradientContainer
-      +buttonGradient({
-            text: "перейти к оплате",
-            arrow: true
+    .toggleWrapper
+      .titleToggle 
+        .titleCheckBox
+          h3.titleText Toggle
+        .toggleCol
+          +toggleButton({
+            id: 'toggleButton',
+            text: 'Получать спецпредложения',
+            checked: true 
           })
+        .toggleCol
+          +toggleButton({
+            id: 'toggleButton2',
+            text: 'Получать спецпредложения'
+          })
+
+    .likeWrapper
+      .titleLikeButton 
+        .titleCheckBox
+          h3.titleText like button
+        .likeCol
+          +likeButton({
+            likes: '2'
+          })
+
+          +likeButton({
+            likes: '12',
+            modifier: true
+          })
+          
+    .rateWrapper
+      .titleRate 
+        .titleCheckBox
+          h3.titleText rate button
+        .rateCol
+          +rateBtn({
+            quantity: "4"
+          })
+          +rateBtn({
+            quantity: "5"
+          })
+
+
+
+
+  //- .buttonColumn
+  //-   +slider({
+  //-     text: 'Range Slider'
+  //-   })
+
+  //-   .buttonTitle 
+  //-     h3 buttons
+  //-     .buttonStock
+  //-       +buttonGradient({
+  //-         text: "CLICK ME"
+  //-       })
+  //-     .buttonStock
+  //-       +buttonGradient({
+  //-         text: "CLICK ME",
+  //-         hover: true
+  //-       })
+  //-     .buttonStock 
+  //-       +buttonGradientBorder({
+  //-         text: 'CLICK ME'
+  //-       })
+  //-     .buttonStock 
+  //-       +buttonGradientBorder({
+  //-         text: 'CLICK ME',
+  //-         modifier: '--hover'
+  //-       })
+
+  //-   .linkTextContainer
+  //-     +linkText({
+  //-       text: 'CLICK ME'
+  //-     })
+
+  //-     +linkText({
+  //-       text: 'CLICK ME',
+  //-       hover: true
+  //-     }) 
+
+  //-   .buttonGradientContainer
+  //-     +buttonGradient({
+  //-           text: "перейти к оплате",
+  //-           arrow: true
+  //-         })
     
-    .paginationTitle
-      h3 pagination
-      .paginationContainer
-        #light-pagination.pagination
-        p 1 – 12 из 100+ вариантов аренды
+  //-   .paginationTitle
+  //-     h3 pagination
+  //-     .paginationContainer
+  //-       #light-pagination.pagination
+  //-       p 1 – 12 из 100+ вариантов аренды
     
