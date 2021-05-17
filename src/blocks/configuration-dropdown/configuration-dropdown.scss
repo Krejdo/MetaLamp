@@ -1,0 +1,119 @@
+.configuration-dropdown {
+  position: relative;
+  // font-family: Montserrat, OpenSans, sans-serif;
+
+  &__label {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75rem;
+    color: $darkShadeBase;
+  }
+
+  &__header {
+    position: relative;
+    color: color(primary-75);
+    line-height: 1.715em;
+    padding: 0.57em 1.6rem 0.715em 1em;
+    border: 1px solid color(primary-25);
+    border-radius: 4px;
+    cursor: pointer;
+    // font-family: Montserrat, OpenSans, sans-serif;
+    font-size: .875rem;
+    width: 100%;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    &-icon {
+      font-size: 1.5rem;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: color(primary-75);
+      cursor: pointer;
+    }
+  }
+
+  &__content {
+    display: block;
+    position: absolute;
+    // background-color: $white;
+    left: 0;
+    right: 0;
+    border: 1px solid color(primary-25);;
+    border-radius: 0 0 0.14em 0.14em;
+    border-top: none;
+    padding-bottom: 6px;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+    &_hided {
+      display: none;
+    }
+  }
+
+  &__footer-button {
+    visibility: visible;
+
+    &_hided {
+      visibility: hidden;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    // font-family: Montserrat, OpenSans, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: $darkShadeBase;
+    vertical-align: middle;
+    padding: 0 0 0 1.2em;
+  }
+
+  &__option {
+    padding-top: 10px;
+  }
+
+  &__controls {
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    line-height: 0;
+    padding-top: 6px;
+    padding-right: 6px;
+  }
+
+  &__counter {
+    padding-top: 1.2em;
+  }
+
+  &__button {
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid color(primary-50);
+    // font-family: Montserrat, OpenSans, sans-serif;
+    font-weight: normal;
+    color: color(primary-50);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.285rem;
+    line-height: 1.875rem;
+    user-select: none;
+    cursor: pointer;
+
+    &_disabled {
+      cursor: default;
+      border-color: color(primary-25);
+      color: color(primary-25);
+    }
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    padding: 16px 7px 0;
+  }
+}

@@ -1,6 +1,10 @@
 .contentContainer {
     display: flex;
     justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 140px;
+    padding: 0 20px 0 20px;
 }
 
 .titleText {
@@ -75,13 +79,20 @@ input[type="submit"]{
 
 .buttonTitle {
     display: flex;
+    margin-bottom: 16px;
 }
 
 .linkTextContainer {
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 142px;
 }
 
-
+.linkText h3 {
+    font-family: $boldFont;
+    font-size: $fontSizeH3;
+}
 
 .checkBoxWrapper{
     margin-bottom: 41px;
@@ -125,4 +136,48 @@ input[type="submit"]{
 
 .rateWrapper {
     width: 260px;
+}
+
+.buttonColumn {
+    width: 320px;
+    & .buttonGradient--arrow::after {
+        top: 54%;
+        left: 89%;
+    }
+}
+
+.sliderWrapper {
+    margin-bottom: 43.56px;
+}
+
+.buttonRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.buttonWrapper {
+    width: 218px;
+}
+
+.buttonGradientContainer {
+    margin-bottom: 40px;
+}
+
+.paginationTitle {
+    margin-bottom: 16.44px;
+}
+
+.paginationContainer {
+    width: 241px;
+    & p {
+    font-size: $fontSizeBody;
+    color: color(primary-75);
+    text-align: center;
+    }
+}
+
+.configuration-dropdown {
+    width: 266px;
 }

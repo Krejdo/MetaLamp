@@ -21,9 +21,9 @@ mixin buttonGradientBorder({modifier, text})
 mixin colorBox({modifier, title, subtitle})
   .containerBox 
     .colorBox(class="colorBox" + modifier)
-      .colorBox__text
-        h2.colorBox__title= title 
-        p.colorBox__subtitle= subtitle
+    .colorBox__text
+      h2.colorBox__title= title 
+      p.colorBox__subtitle= subtitle
 
 
 mixin typeText({title, text, size})
@@ -101,4 +101,7 @@ mixin linkText({text, hover=false})
   else
     .linkText
       h3= text
+
+mixin configuration-dropdown()
+  input.js-dropdown
     
