@@ -10,6 +10,10 @@
   }
 
   &__header {
+
+    width: 226.4px;   // Не получается задать по другому ширину, дожно быть border-box: box sizing
+
+
     position: relative;
     color: color(primary-75);
     line-height: 1.715em;
@@ -19,7 +23,7 @@
     cursor: pointer;
     // font-family: Montserrat, OpenSans, sans-serif;
     font-size: .875rem;
-    width: 100%;
+    // width: 100%;
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
@@ -36,6 +40,9 @@
   }
 
   &__content {
+
+    width: 266px;   // Не получается задать по другому ширину, дожно быть border-box: box sizing
+
     display: block;
     position: absolute;
     // background-color: $white;
