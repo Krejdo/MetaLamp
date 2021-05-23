@@ -226,6 +226,7 @@
 
 
 
+
 //- .form-elements__top-container
 //-           .form-elements__item.form-elements__item_with-big-space
 //-             .form-elements__small-container.js-form-elements__dropdown-room-close
@@ -261,3 +262,45 @@
 //-             .form-elements__title Dropdown
 //-             .form-elements__desc Default
 //-           +configuration-dropdown()
+
+
+
+
+.dropdown(style='width: 300px; margin: 20px')
+  .dropdown__button
+    p expandable checkbox list
+    i.icon-expand_more-1
+  .dropdown__list
+    .dropdown__item
+      +checkBox({
+          text: "Завтрак",
+          id: 'check'
+      })
+    .dropdown__item
+      +checkBox({
+          text: "Письменный стол",
+          id: 'check1',
+          checked: true
+      })
+    .dropdown__item
+      +checkBox({
+          text: "Стул для кормления",
+          id: 'check2',
+          checked: true
+      })
+    .dropdown__item
+      +checkBox({
+          text: "Кроватка",
+          id: 'check3',
+          checked: true
+      })
+    .dropdown__item
+      +checkBox({
+          text: "Телевизор",
+          id: 'check4'
+      })
+    .dropdown__item
+      +checkBox({
+          text: "Шампунь",
+          id: 'check5'
+      })

@@ -8,6 +8,8 @@ import '../blocks/slider/sliderTuchPunch';
 import '../blocks/simplePagination/jquery.simplePagination';
 import '../blocks/dropdown/handleCounter';
 import '../blocks/dropdown/dropdown';
+import '../blocks/datepicker/datepicker';
+import '../blocks/datepicker/datepicker-custom';
 
 import '../pages/FormElements/index';
 

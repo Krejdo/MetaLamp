@@ -52,6 +52,11 @@
     }
 }
 
+.dropdown__button {
+    text-transform: uppercase;
+    justify-content: space-between;
+}
+
 input[type="submit"]{
     background: url(../img/arrow_forward_email.png) no-repeat 50% 50%;
     height: 44px;
@@ -181,3 +186,17 @@ input[type="submit"]{
 .form-elements__small-container {
     width: 266px;
 }
+
+.icon-expand_more-1:before {   //Нужно добавить иконки локально, эта работала по ссылке с icomoon
+    content: "\e900";
+    color: color(primary-50)
+}
+
+.dropdown__button .icon-expand_more-1 {
+    transition: all 0.5s ease;
+    font-size: .7rem;
+}
+
+.rtoate180 {
+    transform: rotate(180deg);
+  }
