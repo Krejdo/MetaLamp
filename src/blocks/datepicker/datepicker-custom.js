@@ -1,6 +1,6 @@
 $(function() {
     $(".dropdown-date__range_from").datepicker({
-      inline: true,  //Показывает каленьдарь постоянно
+      inline: false,  //Показывает каленьдарь постоянно
       minDate: new Date(),
       range: true,
       offset: 10,
