@@ -1,6 +1,7 @@
 .linkText {
     color: $purpleBase;
     font-size: $fontSizeH3;
+    cursor: pointer;
     &--active {
         color: color(primary-50);
     }

@@ -22,13 +22,16 @@
       })
 
 
-    .inputItem
-      .titleForm 
-        h3.titleText Dropdown
-      +dropDown({
-          text: 'Сколько гостей'
-      })
-
+    //- .inputItem
+    //-   .titleForm 
+    //-     h3.titleText Dropdown
+    //-   +dropDown({
+    //-       text: 'Сколько гостей'
+    //-   })
+    .form-elements__item.js-form-elements__dropdown-guest-close
+      .titleForm
+        h3.titleText dropdown
+      +configuration-dropdown()
 
     .inputItem
       .titleForm 
@@ -269,7 +272,7 @@
 .dropdown(style='width: 300px; margin: 20px')
   .dropdown__button
     p expandable checkbox list
-    i.icon-expand_more-1
+    i.icon-expand_more
   .dropdown__list
     .dropdown__item
       +checkBox({

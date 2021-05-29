@@ -38,3 +38,17 @@
   -webkit-user-select: none;
   user-select: none;
 }
+
+.icon-expand_more:before {
+  content: "\e901";
+  color: color(primary-50);
+}
+
+.dropdown__button .icon-expand_more {
+  transition: all 0.5s ease;
+  font-size: .7rem;
+}
+
+.rtoate180 {
+  transform: rotate(180deg);
+}

@@ -12,4 +12,10 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'icomoon';
+	src: url('/fonts/icomoon.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	}
 //Пока работает только подключение woff формата, остальные не подключаются, выдают ошибку, разобратся.

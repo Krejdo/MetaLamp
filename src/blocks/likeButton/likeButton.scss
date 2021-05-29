@@ -4,6 +4,7 @@
 	display: flex;
 	position: relative;
 	background-color: transparent;
+	cursor: pointer;
 	&::after {
 		content: ' ';
 		position: absolute ;
