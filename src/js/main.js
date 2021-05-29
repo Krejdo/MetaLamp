@@ -10,6 +10,7 @@ import '../blocks/dropdown/handleCounter';
 import '../blocks/dropdown/dropdown';
 import '../blocks/datepicker/datepicker';
 import '../blocks/datepicker/datepicker-custom';
+import '../blocks/cardRoom/jquery.hipsterSlider';
 
 import '../pages/FormElements/index';
 
