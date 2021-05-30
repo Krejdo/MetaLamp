@@ -68,7 +68,7 @@
 			buttonTargetSelector: undefined,			/* if set, the buttons will be placed into the defined selector */
 			buttonTargetInsertionMethod: METHOD_DEFAULT,/* possible variants: append, prepend, replace, insertAfter, insertBefore. Better see the public constants such as $.hipsterSlider.METHOD_APPEND etc. */
 			buttonTemplate: function(data) {			/* default function which contains a button template */
-				return '<a href="#" class="'+ data.buttonClass +' '+ data.directionClass +'">' + '<i class="icon-expand_more"></i></a>';
+				return '<div class ="slider-button-wrapper"><div class="'+ data.buttonClass +' '+ data.directionClass +'">' + '<i class="icon-expand_more"></i></div></div>';
 			},
 			buttonsWrapTemplate: function(data) {		/* default function which contains a buttons wrapper template */
 				return '<div class="'+ data.buttonsWrapClass +'" />';
@@ -1793,11 +1793,9 @@
 
 $('.sliderCard').hover(
 	function() {
-		$('.slider-button.previous').addClass('showBtn');
-		$('.slider-button.next1').addClass('showBtn');
+		$('.slider-button-wrapper').addClass('showBtn');
 	}, function() {
-		// $('.slider-button.previous').removeClass('showBtn');
-		// $('.slider-button.next1').removeClass('showBtn');
+		$('.slider-button-wrapper').removeClass('showBtn');
 	}
 )
 

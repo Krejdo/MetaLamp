@@ -2,25 +2,31 @@
   .sliderCard
     ul 
       li
-        img.cardSlider__image
+        img.sliderCard__image
       li
-        img.cardSlider__image
+        img.sliderCard__image
       li
-        img.cardSlider__image
+        img.sliderCard__image
+      li
+        img.sliderCard__image
   .sliderContent
-    .priceWrapper
-      .description
-        h3 № 888
-        p люкс 
-      .price 
-        p 9 990₽ в сутки
-    .ratingWrapper
-      select.star-rating
-        option(value="5")
-        option(value="4")
-        option(value="3")
-        option(value="2")
-        option(value="1")
-      .review 
-        p 145 Отзывов
+    .sliderContent__wrapper
+      .priceWrapper
+        .description
+          h3 № 
+          span 888
+          p люкс 
+        .price 
+          span 9 990₽
+          p в сутки
+      .ratingWrapper
+        select.star-rating
+          option(value="5")
+          option(value="4")
+          option(value="3")
+          option(value="2")
+          option(value="1")
+        .review 
+          span 145
+          p Отзывов
       
