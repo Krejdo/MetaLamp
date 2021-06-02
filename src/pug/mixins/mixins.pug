@@ -104,3 +104,38 @@ mixin linkText({text, hover=false})
 
 mixin configuration-dropdown()
   input.js-dropdown
+
+mixin sliderCard({img, number, price, reviews, rate, luxury= false})
+  .sliderWrapper
+    .sliderCard
+      ul 
+        li
+          img.sliderCard__image(src=(`../img/${img}`), alt="rooms photo")
+        li
+          img.sliderCard__image(src=(`../img/${img}`), alt="rooms photo")
+        li
+          img.sliderCard__image(src=(`../img/${img}`), alt="rooms photo")
+        li
+          img.sliderCard__image(src=(`../img/${img}`), alt="rooms photo")
+    .sliderContent
+      .sliderContent__wrapper
+        .priceWrapper
+          if luxury == true
+            .description
+              h3 № 
+              span= number
+              p люкс 
+          else
+            .description
+                h3 № 
+                span= number
+          .price 
+            span= price
+            p в сутки
+        .ratingWrapper
+          +rateBtn({
+            quantity: `${rate}`
+          })
+          .review 
+            span= reviews
+            p Отзывов

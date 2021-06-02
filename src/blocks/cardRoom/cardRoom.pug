@@ -1,32 +1,18 @@
-.sliderWrapper
-  .sliderCard
-    ul 
-      li
-        img.sliderCard__image
-      li
-        img.sliderCard__image
-      li
-        img.sliderCard__image
-      li
-        img.sliderCard__image
-  .sliderContent
-    .sliderContent__wrapper
-      .priceWrapper
-        .description
-          h3 № 
-          span 888
-          p люкс 
-        .price 
-          span 9 990₽
-          p в сутки
-      .ratingWrapper
-        select.star-rating
-          option(value="5")
-          option(value="4")
-          option(value="3")
-          option(value="2")
-          option(value="1")
-        .review 
-          span 145
-          p Отзывов
++sliderCard({
+  img: 'room_1.png',
+  number: '888',
+  price: '9 990₽',
+  reviews: '145',
+  rate: '5',
+  luxury: true   
+  })
+
+//- +sliderCard({
+//-   img: 'room_2.png',
+//-   number: '840',
+//-   price: '9 990₽',
+//-   reviews: '65',
+//-   rate: '4',
+//-   luxury: false
+//-   })
       

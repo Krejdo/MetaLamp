@@ -1,186 +1,202 @@
+body {
+    background: #F4F4F6;
+}
+
 .sliderCard {
     border-radius: 0px 0px 0px 0px;
+    position: relative;
+    width: 270px;
+    height: 151px;
     &__image {
-        background: url(../img/room_1.png) no-repeat;
-        background-size: cover;
+        object-fit: cover;
         background-position: center;
         height: 151px;
         width: 271px;
     }
-}
-
-.sliderCard {
-    position: relative;
-    width: 270px;
-    height: 151px;
+    & li {
+        position: relative;
+        width: 270px;
+        height: 151px
     }
-    .sliderCard li {
-    position: relative;
-    width: 270px;
-    height: 200px
+    & li a {
+        position: absolute;
+        top: 0;
+        left: 0
     }
-    .sliderCard li a {
-    position: absolute;
-    top: 0;
-    left: 0
-    }
-    .sliderCard .pager-buttons {
+    & .pager-buttons {
         position: absolute;
         bottom: -2px;
         left: 172px;
-        width: 100%;
         height: 15px;
         z-index: 1;
     }
-    .sliderCard .pager-button {
-    display: -moz-inline-stack;
-    display: inline-block;
-    vertical-align: middle;
-    *vertical-align:auto;
-    zoom: 1;
-    *display:inline;
-    margin: 0 2.1px;
-    width: 5px;
-    height: 5px;
-    border-radius: 10px;
-    border: 1px solid white;
-      &.selected {
-          background-color: white;
-      }
-    }
-    .sliderCard .pager-button a {
-    display: block;
-    overflow: hidden;
-    width: 15px;
-    height: 15px;
-    text-indent: -999px;
-    // background-image: url("../img/slider-pager.png");
-    background-repeat: no-repeat;
-    background-position: left top
-    }
-    .sliderCard .pager-button.selected a {
-    background-position: right top
-    }
-    .sliderCard .slider-button {
-    position: absolute;
-    overflow: hidden;
-    display: block;
-    top: 0px;
-    width: 42px;
-    cursor: pointer;
-    border-radius: 4px 0 0 0;
-    // text-indent: -999px;
-    // background-image: url("../img/slider-button.png")
-    }
-    .sliderCard .slider-button.previous {
-    background-position: left top;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // display: none;
-        // &.showBtn {
-        //     display: initial;
-        // }
-        & .icon-expand_more {
-            &::before {
-                color: white;
-                font-size: .5rem;
-            }
-            display: inline-block;
-            transform: rotate(90deg);
-            display: flex;
-            justify-content: center;
+    & .pager-button {
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: middle;
+        *vertical-align:auto;
+        zoom: 1;
+        *display:inline;
+        margin: 0 2.1px;
+        width: 5px;
+        height: 5px;
+        border-radius: 10px;
+        border: 1px solid white;
+        cursor: pointer;
+        &.selected {
+            background-color: white;
+        }
+        & a {
+            text-indent: -999px;
+        }
+        &.selected a {
+            background-position: right top
         }
     }
-    
-    .sliderCard .slider-button.previous:hover {
-    background-position: left bottom
-    }
-    .sliderCard .slider-button.next1 {
-    right: 0px;
-    background-position: right top;
-    height: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    // display: none;
-    //     &.showBtn {
-    //         display: initial;
-    //     }
-        & .icon-expand_more {
-            &::before {
-                color: white;
-                font-size: .5rem;
-            }
-            display: inline-block;
-            transform: rotate(90deg);
+    & .slider-button {
+        position: absolute;
+        overflow: hidden;
+        display: block;
+        top: 0px;
+        width: 42px;
+        cursor: pointer;
+        border-radius: 4px 0 0 0;
+        &.previous {
+            background-position: left top;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);;
+            height: 100%;
+            text-align: center;
             display: flex;
+            flex-direction: column;
             justify-content: center;
+            & .icon-expand_more {
+                &::before {
+                    color: white;
+                    font-size: .5rem;
+                }
+                display: inline-block;
+                transform: rotate(90deg);
+                display: flex;
+                justify-content: center;
+            }
+            &:hover {
+                background-position: left bottom
+            }
+        }
+        &.next1 {
+            right: 0px;
+            background-position: right top;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 99.99%, rgba(255, 255, 255, 0) 100%);
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+                & .icon-expand_more {
+                    &::before {
+                        color: white;
+                        font-size: .5rem;
+                    }
+                    display: inline-block;
+                    transform: rotate(90deg);
+                    display: flex;
+                    justify-content: center;
+                }
         }
     }
-    .sliderCard .slider-button.next1:hover {
-    background-position: right bottom
-    }
+}
 
-    .sliderContent {
-        // height: 107px;
-        width: 270px;
-        border-radius: 0px 0px 4px 4px;
-        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-        &__wrapper {
-            padding: 20px;
-            & span {
-                margin-right: 3px;
-            }
+
+
+.sliderContent {
+    // height: 107px;
+    width: 270px;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    &__wrapper {
+        padding: 20px;
+    }
+    & .description h3 {
+        font-size: $fontSizeBody;
+        font-family: $boldFont;
+        margin-right: 4px;
+    }
+    & .description span {
+        font-size: $fontSizeH2;
+        font-family: $boldFont;
+        margin-right: 1px;
+    }
+    & .description p {
+        font-size: $fontSizeH3;
+        font-family: $boldFont;
+        text-transform: uppercase;
+        color: $purpleBase;
+    }
+    & .price {
+        color: color(primary-50);
+        & span {
+            font-family: $boldFont;
+            font-size: $fontSizeBody;
+            margin-right: 4px;
+        }
+        & p {
+            font-size: $fontSizeH3; 
         }
     }
-    
-    .description {
+    & .review {
+        color: color(primary-50);
+        & span {
+        font-family: $boldFont;
+        font-size: $fontSizeBody;
+        margin-right: 4px;
+        }
+        & p {
+            font-size: $fontSizeBody;
+        }
+    }
+}
+
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.priceWrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid color(primary-10);
+    padding-bottom: 13px;
+    & .price {
         display: flex;
-        justify-content: space-between;
         align-items: flex-end;
     }
+}
 
-    .priceWrapper {
+.ratingWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7px;
+    & .review {
         display: flex;
-        justify-content: space-between;
-        border-bottom: 1px solid color(primary-10);
-        padding-bottom: 12px;
-        & .price {
-            display: flex;
-            align-items: flex-end;
-        }
+        align-items: center;
     }
+}
 
-    .ratingWrapper {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 10px;
-        & .review {
-            display: flex;
-            align-items: flex-end;
-        }
+.slider-button-wrapper {
+    display: none;
+    &.showBtn {
+        display: initial;
     }
+}
 
-    .slider-button-wrapper {
-        display: none;
-        &.showBtn {
-            display: initial;
-        }
-    }
-
-    .slider-display {
-        border-radius: 4px 4px 0 0;
-    }
+.slider-display {
+    border-radius: 4px 4px 0 0;
+}
 
 
-    .sliderWrapper {
-        margin-left: 20px;
-        margin-top: 20px;
-    }
+.sliderWrapper {
+    margin-left: 20px;
+    margin-top: 20px;
+}
