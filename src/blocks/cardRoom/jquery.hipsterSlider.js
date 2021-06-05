@@ -1788,16 +1788,18 @@
 
 	$.hipsterSlider.DEFAULTS = DEFAULTS;
 
+	/* Buttons show/hide
+	/-------------------------------------------------------------------------*/
+	$('.sliderCard').hover(
+		function() {
+			$(this).children('.slider-button-wrapper').addClass('showBtn');
+		}, function() {
+			$(this).children('.slider-button-wrapper').removeClass('showBtn');
+		}
+	);
+
 }));
 
-
-$('.sliderCard').hover(
-	function() {
-		$('.slider-button-wrapper').addClass('showBtn');
-	}, function() {
-		$('.slider-button-wrapper').removeClass('showBtn');
-	}
-)
 
 $('.sliderCard ul').hipsterSlider({
     infinite: true,

@@ -12,6 +12,11 @@ import '../blocks/datepicker/datepicker';
 import '../blocks/datepicker/datepicker-custom';
 import '../blocks/cardRoom/jquery.hipsterSlider';
 
+
+import '../img/room_1.png'; //Не заргужается из миксина, временное решение
+import '../img/room_2.png';
+
+
 import '../pages/FormElements/index';
 
 //import '../pug/page.pug';
