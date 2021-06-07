@@ -1,104 +1,114 @@
 .logoKitUi
   +logoKit()
 
-.contentContainer
-  .inputColumn
-    .inputItem
-      .titleForm 
-        h3.titleText Text Field
-        p.titleTextGray Default
+.form-element
+  .form-element__column
+    .form-element__item
+      .form-element__title
+        h3.form-element__title-text Text Field
+        p.form-element--gray-text Default
       +inputCard({
           text: 'Email'
       })
 
 
-    .inputItem
-      .titleForm 
-        h3.titleText Text Field
-        p.titleTextGray Hover / Focus
+    .form-element__item
+      .form-element__title
+        h3.form-element__title-text Text Field
+        p.form-element--gray-text Hover / Focus
       +inputCard({
           text: 'This is pretty awesome',
           modifier: '--active'
       })
 
 
-    //- .inputItem
-    //-   .titleForm 
-    //-     h3.titleText Dropdown
-    //-   +dropDown({
-    //-       text: 'Сколько гостей'
-    //-   })
-    .form-elements__item.js-form-elements__dropdown-guest-close
-      .titleForm
-        h3.titleText dropdown
-      +configuration-dropdown()
+    .form-element__item
+      .form-elements__item.js-form-elements__dropdown-guest-close
+        .form-element__title
+          h3.form-element__title-text dropdown
+        +configuration-dropdown()
 
-    .inputItem
-      .titleForm 
-        h3.titleText masked text field
+
+    .form-element__item
+      .form-element__title
+        h3.form-element__title-text masked text field
       +inputCard({
           text: 'ДД.ММ.ГГГГ'
       })
 
 
-    .dateDropdown 
-      .dateWrapper
-        .titleForm 
-          h3.titleText date Dropdown
-        +dropDown({
-            text: 'ДД.ММ.ГГГГ'
+    .form-element__date 
+      .form-element__date-wrapper
+        .form-element__title
+          h3.form-element__title-text date Dropdown
+        +datepicker({
+          from: true,
+          placeholder: "ДД.ММ.ГГГГ"
         })
-      .dateWrapper
-        .titleForm 
-          h3.titleText date Dropdown
-        +dropDown({
-            text: '19.08.2019'
+
+
+      .form-element__date-wrapper
+        .form-element__title
+          h3.form-element__title-text date Dropdown
+        +datepicker({
+          to: true,
+          placeholder: "19.08.2019"
         })
-    .wrapperForm
-      .titleForm 
-        h3.titleText filter date dropdown
-      +dropDown({
-          text: '19 авг - 23 авг'
+
+
+    .form-element__date-bs
+      .form-element__title
+        h3.form-element__title-text filter date dropdown
+      .dropdown-date-filter
+        +datepicker({
+          placeholder: "19 авг - 23 авг"
         })
-    .wrapperForm
-      .titleForm 
-        h3.titleText subscription text field
+
+
+    .form-element__date-bs
+      .form-element__title
+        h3.form-element__title-text subscription text field
       form.footer__formSend
         +inputCard({
             modifier: "--minWidth",
             text: "Email"})
         input(type="submit" value="")
 
-    .form-elements__small-container.js-form-elements__dropdown-room-close
-      .titleForm
-        h3.titleText dropdown
-        p.titleTextGray Default
-      +configuration-dropdown()
 
-    .form-elements__small-container.js-form-elements__dropdown-room-open
-      .titleForm
-        h3.titleText dropdown
-        p.titleTextGray expanded
-      +configuration-dropdown()
+    //- .form-element__small-container.js-form-elements__dropdown-room-close
+    //-   .form-element__title
+    //-     h3.form-element__title-text dropdown
+    //-     p.form-element--gray-text Default
+    //-   +configuration-dropdown()
 
 
+    //- .form-element__small-container.js-form-elements__dropdown-room-open
+    //-   .form-element__title
+    //-     h3.form-element__title-text dropdown
+    //-     p.form-element--gray-text expanded
+    //-   +configuration-dropdown()
 
 
-  .checkColumn
+  //- =========================================Column-2===============================================
+
+
+  .form-element__column
     .checkBoxWrapper
       .titleCheckBox 
-        h3.titleText Checkbox Buttons
+        h3.form-element__title-text Checkbox Buttons
       .checkBoxItem
         +checkBox({
             text: "Можно курить",
             id: 'check'
         })
+
       .checkBoxItem
         +checkBox({
             text: "Можно с питомцами",
             checked: true,
             id: 'check2'
         })
+
       .checkBoxItem
         +checkBox({
             text: "Можно пригласить гостей (до 10 человек)",
@@ -109,7 +119,7 @@
     .radioButtonWrapper
       .titleRadioButton 
         .titleCheckBox
-          h3.titleText Radio Buttons
+          h3.form-element__title-text Radio Buttons
         +radioButton({
           id: 'radio-1',
           text: 'Мужчина',
@@ -124,13 +134,14 @@
     .toggleWrapper
       .titleToggle 
         .titleCheckBox
-          h3.titleText Toggle
+          h3.form-element__title-text Toggle
         .toggleCol
           +toggleButton({
             id: 'toggleButton',
             text: 'Получать спецпредложения',
             checked: true 
           })
+
         .toggleCol
           +toggleButton({
             id: 'toggleButton2',
@@ -140,7 +151,7 @@
     .likeWrapper
       .titleLikeButton 
         .titleCheckBox
-          h3.titleText like button
+          h3.form-element__title-text like button
         .likeCol
           +likeButton({
             likes: '2'
@@ -154,51 +165,58 @@
     .rateWrapper
       .titleRate 
         .titleCheckBox
-          h3.titleText rate button
+          h3.form-element__title-text rate button
         .rateCol
           +rateBtn({
             quantity: "4"
           })
+
           +rateBtn({
             quantity: "5"
           })
-    .form-elements__item.js-form-elements__dropdown-guest-open
-      .titleForm
-        h3.titleText dropdown
-      +configuration-dropdown()
+
+    //- .form-elements__item.js-form-elements__dropdown-guest-open
+    //-   .form-element__title
+    //-     h3.form-element__title-text dropdown
+    //-   +configuration-dropdown()
 
 
+  //- =========================================Column-3===============================================
 
 
-  .buttonColumn
+  .form-element__column
     .sliderWrapper
       +slider({
         text: 'Range Slider'
       })
 
     .buttonTitle 
-      h3.titleText buttons
+      h3.form-element__title-text buttons
     .buttonWrapper
       .buttonRow
         .buttonStock
           +buttonGradient({
             text: "CLICK ME"
           })
+
         .buttonStock
           +buttonGradient({
             text: "CLICK ME",
             hover: true
           })
+
       .buttonRow
         .buttonStock 
           +buttonGradientBorder({
             text: 'CLICK ME'
           })
+
         .buttonStock 
           +buttonGradientBorder({
             text: 'CLICK ME',
             modifier: '--hover'
           })
+
 
     .linkTextContainer
       +linkText({
@@ -217,93 +235,88 @@
           })
     
     .paginationTitle
-      h3.titleText pagination
+      h3.form-element__title-text pagination
     .paginationContainer
       #light-pagination.pagination
       p 1 – 12 из 100+ вариантов аренды
 
-    .form-elements__item.js-form-elements__dropdown-quest-open-many
-      .titleForm
-        h3.titleText dropdown
+    //- .form-elements__item.js-form-elements__dropdown-quest-open-many
+    //-   .form-element__title
+    //-     h3.form-element__title-text dropdown
+    //-   +configuration-dropdown()
+
+
+//-======================================================================================================//
+
+
+.form-element
+  .form-element__column
+    .form-element__small-container.js-form-elements__dropdown-room-close
+      .form-element__title
+        h3.form-element__title-text dropdown
+        p.form-element--gray-text Default
       +configuration-dropdown()
 
 
+    .form-element__small-container.js-form-elements__dropdown-room-open
+      .form-element__title
+        h3.form-element__title-text dropdown
+        p.form-element--gray-text expanded
+      +configuration-dropdown()
+
+    .dropdown(style='width: 300px;')
+      .dropdown__button
+        p expandable checkbox list
+        i.icon-expand_more
+
+    .dropdown(style='width: 300px;')
+      .dropdown__button
+        p expandable checkbox list
+        i.icon-expand_more
+      .dropdown__list.dropdown__list-visible
+        .dropdown__item
+          +checkBox({
+              text: "Завтрак",
+              id: 'check'
+          })
+        .dropdown__item
+          +checkBox({
+              text: "Письменный стол",
+              id: 'check1',
+              checked: true
+          })
+        .dropdown__item
+          +checkBox({
+              text: "Стул для кормления",
+              id: 'check2',
+              checked: true
+          })
+        .dropdown__item
+          +checkBox({
+              text: "Кроватка",
+              id: 'check3',
+              checked: true
+          })
+        .dropdown__item
+          +checkBox({
+              text: "Телевизор",
+              id: 'check4'
+          })
+        .dropdown__item
+          +checkBox({
+              text: "Шампунь",
+              id: 'check5'
+          })
 
 
-//- .form-elements__top-container
-//-           .form-elements__item.form-elements__item_with-big-space
-//-             .form-elements__small-container.js-form-elements__dropdown-room-close
-//-               .form-elements__head
-//-                 .form-elements__title Dropdown 
-//-                 .form-elements__desc Default
-//-               +configuration-dropdown()
+  .form-element__column
+    .form-elements__item.js-form-elements__dropdown-guest-open
+      .form-element__title
+        h3.form-element__title-text dropdown
+      +configuration-dropdown()
 
-//- .form-elements__small-container.js-form-elements__dropdown-room-close
-//-   .titleForm
-//-     h3.titleText dropdown
-//-     p.titleTextGray Default
-//-   +configuration-dropdown()
-
-//- .form-elements__small-container.js-form-elements__dropdown-room-open
-//-   .titleForm
-//-     h3.titleText dropdown
-//-     p.titleTextGray expanded
-//-   +configuration-dropdown()
-
-//- .form-elements__item.js-form-elements__dropdown-guest-open
-//-   .form-elements__head.form-elements__head_accent
-//-     .form-elements__title Dropdown
-//-   +configuration-dropdown()
-
-//- .form-elements__item.js-form-elements__dropdown-quest-open-many
-//-           .form-elements__head.form-elements__head_accent
-//-             .form-elements__title Dropdown 
-//-           +configuration-dropdown()
-
-//- .form-elements__item.js-form-elements__dropdown-guest-close
-//-           .form-elements__head
-//-             .form-elements__title Dropdown
-//-             .form-elements__desc Default
-//-           +configuration-dropdown()
-
-
-
-
-.dropdown(style='width: 300px; margin: 20px')
-  .dropdown__button
-    p expandable checkbox list
-    i.icon-expand_more
-  .dropdown__list
-    .dropdown__item
-      +checkBox({
-          text: "Завтрак",
-          id: 'check'
-      })
-    .dropdown__item
-      +checkBox({
-          text: "Письменный стол",
-          id: 'check1',
-          checked: true
-      })
-    .dropdown__item
-      +checkBox({
-          text: "Стул для кормления",
-          id: 'check2',
-          checked: true
-      })
-    .dropdown__item
-      +checkBox({
-          text: "Кроватка",
-          id: 'check3',
-          checked: true
-      })
-    .dropdown__item
-      +checkBox({
-          text: "Телевизор",
-          id: 'check4'
-      })
-    .dropdown__item
-      +checkBox({
-          text: "Шампунь",
-          id: 'check5'
-      })
+  .form-element__column
+    .form-elements__item.js-form-elements__dropdown-quest-open-many
+          .form-element__title
+            h3.form-element__title-text dropdown
+          +configuration-dropdown()

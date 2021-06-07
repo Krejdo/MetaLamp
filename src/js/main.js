@@ -6,10 +6,10 @@ import '../blocks/rateBtn/rateBtn';
 import '../blocks/slider/slider';
 import '../blocks/slider/sliderTuchPunch';
 import '../blocks/simplePagination/jquery.simplePagination';
-import '../blocks/dropdown/handleCounter';
 import '../blocks/dropdown/dropdown';
 import '../blocks/datepicker/datepicker';
-import '../blocks/datepicker/datepicker-custom';
+import '../blocks/datepicker/datepicker-range';
+import '../blocks/datepicker/datepicker-filter';
 import '../blocks/cardRoom/jquery.hipsterSlider';
 
 

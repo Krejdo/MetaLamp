@@ -11,15 +11,14 @@
 
   &__header {
 
-    width: 226.4px;   // Не получается задать по другому ширину, дожно быть border-box: box sizing
-
-
+    width: 100%;
+    box-sizing: border-box;
     position: relative;
     color: color(primary-75);
     line-height: 1.715em;
-    padding: 0.57em 1.6rem 0.715em 1em;
-    border: 1px solid color(primary-25);
-    border-radius: 4px;
+    padding: 0.61em 1.6rem 0.715em 1em;
+    border: 1px solid color(primary-50);
+    border-radius: 4px 4px 0 0;
     cursor: pointer;
     // font-family: Montserrat, OpenSans, sans-serif;
     font-size: .875rem;
@@ -28,31 +27,31 @@
     -khtml-user-select: none;
     -webkit-user-select: none;
     user-select: none;
+  }
 
-    &-icon {
-      font-size: 1.5rem;
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      color: color(primary-75);
-      cursor: pointer;
-    }
+  & .icon-expand_more::before {
+    content: "\e901";
+    color: color(primary-75);
+    font-size: 0.5rem;
+    position: absolute;
+    right: 16px;
+    top: 18px;
+    cursor: pointer;
   }
 
   &__content {
 
-    width: 266px;   // Не получается задать по другому ширину, дожно быть border-box: box sizing
-
     display: block;
     position: absolute;
-    // background-color: $white;
+    background-color: white;
     left: 0;
     right: 0;
-    border: 1px solid color(primary-25);;
+    border: 1px solid color(primary-50);;
     border-radius: 0 0 0.14em 0.14em;
     border-top: none;
     padding-bottom: 6px;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    z-index: 1;
 
     &_hided {
       display: none;
@@ -70,22 +69,22 @@
   &__item {
     display: flex;
     justify-content: space-between;
-    // font-family: Montserrat, OpenSans, sans-serif;
-    font-weight: bold;
+    align-items: center;
+    font-family: $boldFont;
     text-transform: uppercase;
-    font-size: 0.75rem;
+    font-size: $fontSizeH3;
     color: $darkShadeBase;
     vertical-align: middle;
     padding: 0 0 0 1.2em;
   }
 
   &__option {
-    padding-top: 10px;
+    padding: 13px 0 10px 0;
   }
 
   &__controls {
     display: flex;
-    width: 100px;
+    width: 92px;
     justify-content: space-between;
     line-height: 0;
     padding-top: 6px;
@@ -99,28 +98,39 @@
   &__button {
     width: 1.5em;
     height: 1.5em;
-    border: 1px solid color(primary-50);
-    // font-family: Montserrat, OpenSans, sans-serif;
-    font-weight: normal;
+    border: 1px solid color(primary-25);
+    font-family: $regularFont;
     color: color(primary-50);
     border-radius: 50%;
     text-align: center;
-    font-size: 1.285rem;
-    line-height: 1.875rem;
+    font-size: 1.125rem;
+    line-height: 1.6rem;
     user-select: none;
     cursor: pointer;
 
     &_disabled {
       cursor: default;
-      border-color: color(primary-25);
-      color: color(primary-25);
+      border-color: color(primary-10);
+      color: color(primary-10);
     }
   }
 
   &__footer {
     display: flex;
     justify-content: space-between;
-    height: 40px;
-    padding: 16px 7px 0;
+    align-items: center;
+    height: 25px;
+    padding: 15px 6px 0px 13px;
+  }
+}
+
+.simple-button {
+  color: $purpleBase;
+  font-family: $boldFont;
+  font-size: $fontSizeH3;
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    color: color(primary-50);
   }
 }

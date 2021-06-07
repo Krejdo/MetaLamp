@@ -1,62 +1,106 @@
-.contentContainer {
+.form-element {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 140px;
     padding: 0 20px 0 20px;
-}
-
-.titleText {
-    font-family: $boldFont;
-    font-size: $fontSizeH3;
-    text-transform: uppercase;
-}
-
-.titleTextGray {
-    font-size: $fontSizeH3;
-    text-transform: uppercase;
-    color: color(primary-50);
-}
-
-.inputColumn {
-    display: flex;
-    flex-direction: column;
-    max-width: 320px;
-}
-
-.inputItem {
-    width: 320px;
-    margin-bottom: 20px;
-}
-
-.dateDropdown {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 41px;
-    & .dropdown__button::before {
-        left: 70%;
+    &__column {
+        display: flex;
+        flex-direction: column;
+        min-width: 320px;
+        & .buttonGradient--arrow::after {
+            top: 54%;
+            left: 89%;           //Нужно поправить, т.к будет иконка
+        }
+    }
+    &__item {
+        width: 320px;
+        margin-bottom: 20px;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+        &-text {
+            font-family: $boldFont;
+            font-size: $fontSizeH3;
+            text-transform: uppercase; 
+        }
+    }
+    &__date {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 41px;
+        & .dropdown__button::before {
+            left: 70%;
+        }
+        &-bs {
+            width: 266px;
+            margin-bottom: 41px;
+            & .dropdown__button::before {
+                left: 82%;
+            }
+        }
+    }
+    &--gray-text {
+        font-size: $fontSizeH3;
+        text-transform: uppercase;
+        color: color(primary-50);
+    }
+    &__small-container {
+        width: 266px;
+    }
+    &__date-wrapper {
+        width: 150px;
     }
 }
+
+// .titleText {
+//     font-family: $boldFont;
+//     font-size: $fontSizeH3;
+//     text-transform: uppercase;
+// }
+
+// .titleTextGray {
+//     font-size: $fontSizeH3;
+//     text-transform: uppercase;
+//     color: color(primary-50);
+// }
+
+// .inputColumn {
+//     display: flex;
+//     flex-direction: column;
+//     max-width: 320px;
+// }
+
+// .inputItem {
+//     width: 320px;
+//     margin-bottom: 20px;
+// }
+
+// .dateDropdown {
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: 41px;
+//     & .dropdown__button::before {
+//         left: 70%;
+//     }
+// }
 
 .dateDropdown .dropdown {
     width: 150px;
 }
 
-.wrapperForm {
-    width: 266px;
-    margin-bottom: 41px;
-    & .dropdown__button::before {
-        left: 82%;
-    }
-}
-
-.dropdown__button {
-    text-transform: uppercase;
-    justify-content: space-between;
-    cursor: pointer;
-}
+// .wrapperForm {
+//     width: 266px;
+//     margin-bottom: 41px;
+//     & .dropdown__button::before {
+//         left: 82%;
+//     }
+// }
 
 input[type="submit"]{
     background: url(../img/arrow_forward_email.png) no-repeat 50% 50%;
@@ -69,16 +113,16 @@ input[type="submit"]{
     cursor: pointer;
 }
 
-.titleForm {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 5px;
-}
+// .titleForm {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: 5px;
+// }
 
-.checkColumn {
-    display: flex;
-    flex-direction: column;
-}
+// .checkColumn {
+//     display: flex;
+//     flex-direction: column;
+// }
 
 .buttonStock {
   width: 99px;
@@ -145,13 +189,13 @@ input[type="submit"]{
     width: 260px;
 }
 
-.buttonColumn {
-    width: 320px;
-    & .buttonGradient--arrow::after {
-        top: 54%;
-        left: 89%;
-    }
-}
+// .buttonColumn {
+//     width: 320px;
+//     & .buttonGradient--arrow::after {
+//         top: 54%;
+//         left: 89%;
+//     }
+// }
 
 .sliderWrapper {
     margin-bottom: 43.56px;
@@ -185,6 +229,6 @@ input[type="submit"]{
     }
 }
 
-.form-elements__small-container {
-    width: 266px;
-}
+// .form-elements__small-container {
+//     width: 266px;
+// }

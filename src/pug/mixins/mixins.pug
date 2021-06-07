@@ -139,3 +139,17 @@ mixin sliderCard({img, number, price, reviews, rate, luxury= false})
           .review 
             span= reviews
             p Отзывов
+
+mixin datepicker({from= false, to= false, placeholder})
+  if from == true 
+    .dropdown-date
+      input.dropdown-date__range.dropdown-date__range_from(type="text" placeholder=placeholder readonly)
+      i.icon-expand_more
+  else if to == true 
+    .dropdown-date
+      input.dropdown-date__range.dropdown-date__range_to(type="text" placeholder=placeholder readonly)
+      i.icon-expand_more
+  else 
+    .dropdown-date
+      input.dropdown-date-filter__input(type="text" placeholder=placeholder readonly)
+      i.icon-expand_more

@@ -24,7 +24,7 @@ class DropdownView {
     $(document).on('click', this.onDocumentClick.bind(this));
 
     $(input).wrap($container);
-    // this._$icon = $('<i class="icon-expand_more"></i>');
+    this._$icon = $('<i class="icon-expand_more"></i>');
     $(input).after(this._$icon);
     $(input).after(this._$itemsContainer);
     $(input).attr('readonly', 'readonly');
