@@ -57,50 +57,28 @@
     }
 }
 
-// .titleText {
-//     font-family: $boldFont;
-//     font-size: $fontSizeH3;
-//     text-transform: uppercase;
-// }
+.rich-item {
+    width: 271px;
+    margin-bottom: 10px;
+}
 
-// .titleTextGray {
-//     font-size: $fontSizeH3;
-//     text-transform: uppercase;
-//     color: color(primary-50);
-// }
+.bullet-item {
+    width: 271px;
+    margin-bottom: 10px;
+}
 
-// .inputColumn {
-//     display: flex;
-//     flex-direction: column;
-//     max-width: 320px;
-// }
+.iconWrapper {
+    margin-bottom: 23px;
+}
 
-// .inputItem {
-//     width: 320px;
-//     margin-bottom: 20px;
-// }
-
-// .dateDropdown {
-//     width: 100%;
-//     display: flex;
-//     justify-content: space-between;
-//     margin-bottom: 41px;
-//     & .dropdown__button::before {
-//         left: 70%;
-//     }
-// }
+.user-wrapper {
+    max-width: 711px;
+}
 
 .dateDropdown .dropdown {
     width: 150px;
 }
 
-// .wrapperForm {
-//     width: 266px;
-//     margin-bottom: 41px;
-//     & .dropdown__button::before {
-//         left: 82%;
-//     }
-// }
 
 input[type="submit"]{
     background: url(../img/arrow_forward_email.png) no-repeat 50% 50%;
@@ -113,16 +91,6 @@ input[type="submit"]{
     cursor: pointer;
 }
 
-// .titleForm {
-//     display: flex;
-//     justify-content: space-between;
-//     margin-bottom: 5px;
-// }
-
-// .checkColumn {
-//     display: flex;
-//     flex-direction: column;
-// }
 
 .buttonStock {
   width: 99px;
@@ -189,13 +157,6 @@ input[type="submit"]{
     width: 260px;
 }
 
-// .buttonColumn {
-//     width: 320px;
-//     & .buttonGradient--arrow::after {
-//         top: 54%;
-//         left: 89%;
-//     }
-// }
 
 .sliderWrapper {
     margin-bottom: 43.56px;
@@ -228,7 +189,3 @@ input[type="submit"]{
     text-align: center;
     }
 }
-
-// .form-elements__small-container {
-//     width: 266px;
-// }

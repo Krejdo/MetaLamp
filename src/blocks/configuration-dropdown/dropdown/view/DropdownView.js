@@ -21,7 +21,7 @@ class DropdownView {
 
     // hide dropdown when user click anywhere
     $container.on('click', this.onContainerClick.bind(this));
-    $(document).on('click', this.onDocumentClick.bind(this));
+    // $(document).on('click', this.onDocumentClick.bind(this));
 
     $(input).wrap($container);
     this._$icon = $('<i class="icon-expand_more"></i>');

@@ -15,6 +15,7 @@ import '../blocks/cardRoom/jquery.hipsterSlider';
 
 import '../img/room_1.png'; //Не заргужается из миксина, временное решение
 import '../img/room_2.png';
+import '../img/photo_1.png';
 
 
 import '../pages/FormElements/index';

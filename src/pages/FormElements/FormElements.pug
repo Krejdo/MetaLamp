@@ -264,6 +264,27 @@
         p.form-element--gray-text expanded
       +configuration-dropdown()
 
+
+  //- =========================================Column-2===============================================
+  .form-element__column
+    .form-elements__item.js-form-elements__dropdown-guest-open
+      .form-element__title
+        h3.form-element__title-text dropdown
+      +configuration-dropdown()
+
+  //- =========================================Column-2===============================================
+
+  .form-element__column
+    .form-elements__item.js-form-elements__dropdown-quest-open-many
+          .form-element__title
+            h3.form-element__title-text dropdown
+          +configuration-dropdown()
+
+
+//-====================================================================================================//
+
+.form-element
+  .form-element__column
     .dropdown(style='width: 300px;')
       .dropdown__button
         p expandable checkbox list
@@ -308,15 +329,66 @@
               id: 'check5'
           })
 
-
+  //- =========================================Column-2===============================================
   .form-element__column
-    .form-elements__item.js-form-elements__dropdown-guest-open
-      .form-element__title
-        h3.form-element__title-text dropdown
-      +configuration-dropdown()
+    .form-element__title
+      h3.form-element__title-text rich Checkbox Buttons
+    .rich-item
+      +checkBox({
+        rich: true,
+        text: "Широкий коридор",
+        subtitle: "Ширина коридоров в номере не менее 91 см.",
+        id: 'rich'
+      })
+    .rich-item
+      +checkBox({
+        rich: true,
+        text: "Помощник для инвалидов",
+        subtitle: "На 1 этаже вас встретит специалист  и проводит до номера.",
+        id: 'rich1'
+      })
 
+  //- =========================================Column-2===============================================
   .form-element__column
-    .form-elements__item.js-form-elements__dropdown-quest-open-many
-          .form-element__title
-            h3.form-element__title-text dropdown
-          +configuration-dropdown()
+    .form-element__title
+      h3.form-element__title-text bullet list
+    .bullet-item 
+      +bulletList({
+        text: 'Нельзя с питомцами'
+      })
+    .bullet-item 
+      +bulletList({
+        text: 'Без вечеринок и мероприятий'
+      })
+    .bullet-item 
+      +bulletList({
+        text: 'Время прибытия — после 13:00, а выезд до 12:00'
+      })
+
+
+//-====================================================================================================//
+.form-element
+  .form-element__column
+    .iconWrapper
+      +iconText({
+        icon: 'icon-insert_emoticon',
+        title: 'Комфорт',
+        subtitle: 'Шумопоглощающие стены'
+      })
+    .iconWrapper
+      +iconText({
+        icon: 'icon-location_city',
+        title: 'Комфорт',
+        subtitle: 'Шумопоглощающие стены'
+      })
+        
+  //- =========================================Column-2===============================================
+  .form-element__column
+    .user-wrapper
+      +userFeedback({
+        img: 'photo_1.png', 
+        name: 'Мурад Сарафанов', 
+        day: '5 дней назад', 
+        modifier: true, 
+        likes: '12', 
+        feedback: 'Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.'})

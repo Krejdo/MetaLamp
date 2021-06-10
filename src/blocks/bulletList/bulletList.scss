@@ -1,0 +1,18 @@
+.bullet {
+    display: flex;
+    align-items: center;
+    &__circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: color(primary-25);
+    }
+    &__text {
+        font-size: $fontSizeBody;
+        color: color(primary-75);
+        line-height: 20px;
+    }
+    &__wrapper {
+        margin-right: 10px;
+    }
+}

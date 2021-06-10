@@ -55,9 +55,15 @@ mixin dropDown({text})
     .dropdown__button= text
 
 
-mixin checkBox({text, checked=false, id})
-  input(type="checkbox" id=id class="customCheckbox" checked= checked)
-  label(for=id)= text
+mixin checkBox({text, subtitle, checked=false, id, rich=false})
+  if rich == true 
+    input.customCheckbox(type="checkbox" id=id checked= checked)
+    label.customCheckbox--bold(for=id)
+      h3= text
+      p= subtitle
+  else
+    input(type="checkbox" id=id class="customCheckbox" checked= checked)
+    label(for=id)= text
 
 
 mixin radioButton({id, text, checked=false})
@@ -153,3 +159,33 @@ mixin datepicker({from= false, to= false, placeholder})
     .dropdown-date
       input.dropdown-date-filter__input(type="text" placeholder=placeholder readonly)
       i.icon-expand_more
+
+
+mixin bulletList({text})
+  .bullet 
+    .bullet__wrapper
+      .bullet__circle
+    h3.bullet__text= text
+
+mixin iconText({title, subtitle, icon})
+  .iconText-list 
+    i(class= icon)
+    .icontText-list__wrapper-text 
+      h3= title
+      p= subtitle
+
+mixin userFeedback({img, name, day, modifier, likes, feedback})
+  .user-feedback
+    .user-feedback__header
+      img.user-feedback__image(src=(`../img/${img}`), alt="user photo")
+      .user-feedback__text 
+        h3= name
+        p= day
+    .user-feedback__footer
+      .user-feedback__likes
+        +likeButton({
+          modifier: modifier,
+          likes: `${likes}`
+        })
+      .user-feedback__text 
+          p= feedback

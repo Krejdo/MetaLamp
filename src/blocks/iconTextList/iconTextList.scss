@@ -1,0 +1,39 @@
+.iconText-list {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid color(primary-10);
+    padding-bottom: 17px;
+    line-height: 24px;
+    &__wrapper-text {
+        font-size: $fontSizeBody;
+        color: color(primary-75);
+    }
+    & h3 {
+        color: color(primary-75);
+        font-family: $boldFont;
+    }
+}
+
+.icon-insert_emoticon {
+    margin-right: 10px;
+    &:before {
+    content: "\e902";
+    background: linear-gradient(180deg, $purpleBase 0%, $purpleGradient 100%);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    }
+}
+
+.icon-location_city {
+    margin-right: 10px;
+    &:before {
+    content: "\e903";
+    background: linear-gradient(180deg, $purpleBase 0%, $purpleGradient 100%);
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   //поправить в этих иконках, повторяются значения. Сделать общими
+    font-size: 48px;
+    }
+}
