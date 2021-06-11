@@ -75,23 +75,7 @@
         input(type="submit" value="")
 
 
-    //- .form-element__small-container.js-form-elements__dropdown-room-close
-    //-   .form-element__title
-    //-     h3.form-element__title-text dropdown
-    //-     p.form-element--gray-text Default
-    //-   +configuration-dropdown()
-
-
-    //- .form-element__small-container.js-form-elements__dropdown-room-open
-    //-   .form-element__title
-    //-     h3.form-element__title-text dropdown
-    //-     p.form-element--gray-text expanded
-    //-   +configuration-dropdown()
-
-
   //- =========================================Column-2===============================================
-
-
   .form-element__column
     .checkBoxWrapper
       .titleCheckBox 
@@ -175,15 +159,8 @@
             quantity: "5"
           })
 
-    //- .form-elements__item.js-form-elements__dropdown-guest-open
-    //-   .form-element__title
-    //-     h3.form-element__title-text dropdown
-    //-   +configuration-dropdown()
-
 
   //- =========================================Column-3===============================================
-
-
   .form-element__column
     .sliderWrapper
       +slider({
@@ -240,10 +217,6 @@
       #light-pagination.pagination
       p 1 – 12 из 100+ вариантов аренды
 
-    //- .form-elements__item.js-form-elements__dropdown-quest-open-many
-    //-   .form-element__title
-    //-     h3.form-element__title-text dropdown
-    //-   +configuration-dropdown()
 
 
 //-======================================================================================================//
@@ -272,8 +245,7 @@
         h3.form-element__title-text dropdown
       +configuration-dropdown()
 
-  //- =========================================Column-2===============================================
-
+  //- =========================================Column-3===============================================
   .form-element__column
     .form-elements__item.js-form-elements__dropdown-quest-open-many
           .form-element__title
@@ -285,10 +257,11 @@
 
 .form-element
   .form-element__column
-    .dropdown(style='width: 300px;')
-      .dropdown__button
-        p expandable checkbox list
-        i.icon-expand_more
+    .dropdown-wrapper
+      .dropdown(style='width: 300px;')
+        .dropdown__button
+          p expandable checkbox list
+          i.icon-expand_more
 
     .dropdown(style='width: 300px;')
       .dropdown__button
@@ -348,7 +321,7 @@
         id: 'rich1'
       })
 
-  //- =========================================Column-2===============================================
+  //- =========================================Column-3===============================================
   .form-element__column
     .form-element__title
       h3.form-element__title-text bullet list
@@ -383,7 +356,7 @@
       })
         
   //- =========================================Column-2===============================================
-  .form-element__column
+  .form-element__column_long
     .user-wrapper
       +userFeedback({
         img: 'photo_1.png', 

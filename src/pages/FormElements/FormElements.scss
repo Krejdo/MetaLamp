@@ -1,17 +1,23 @@
 .form-element {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    // justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 140px;
     padding: 0 20px 0 20px;
     &__column {
-        display: flex;
-        flex-direction: column;
-        min-width: 320px;
+        // display: flex;
+        // flex-direction: column;
+        width: 320px;
         & .buttonGradient--arrow::after {
             top: 54%;
             left: 89%;           //Нужно поправить, т.к будет иконка
+        }
+        &_long {
+            grid-column-start: 2;
+            grid-column-end: 4;
         }
     }
     &__item {
@@ -73,6 +79,10 @@
 
 .user-wrapper {
     max-width: 711px;
+}
+
+.dropdown-wrapper {
+    margin-bottom: 49px;
 }
 
 .dateDropdown .dropdown {

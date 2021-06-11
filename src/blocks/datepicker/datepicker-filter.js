@@ -8,8 +8,8 @@ $(function() {
       position: "bottom left",
       classes: "dropdown-date_filter",
       clearButton: true,
-      prevHtml: `<div class="arrow_prew"></div>`,
-      nextHtml: `<div class="arrow_next"></div>`,
+      prevHtml: `<div class="icon-arrow-back"></div>`,
+      nextHtml: `<div class="icon-arrow"></div>`,
       todayButton: true,
       navTitles: {
         days: "<h2>MM yyyy</h2>",
