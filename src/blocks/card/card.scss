@@ -3,10 +3,69 @@
     box-shadow: 0 0 25px $boxShadowCard;
     border-radius: 4px;
     padding: 40px 30px 30px 30px;
+    background-color: #fff;
 
-    margin: 50px; //Delite late
+    &__input-wrapper {
+        margin-bottom: 10px;
+    }
 
-    // .card__title
+    &__radio-wrapper {
+        margin-bottom: 24px;
+    }
+
+    &__date-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__total-wrapper {
+        margin-bottom: 20px;
+    }
+
+    &__date-item {
+        width: 150px;
+    }
+
+    &__dropdown-item {
+        margin-bottom: 31px;
+    }
+
+    &__price-item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__total-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__price-list {
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+
+    &__title-wrapper {
+        margin-bottom: 5px;
+    }
+
+    &__title-date {
+        margin-bottom: 20px;
+    }
+
+    &__input-entry {
+        margin-bottom: 20px;
+    }
+
+    &__gradient-btn {
+        margin-bottom: 30px;
+    }
+
+    &__border-gradient {
+        width: 99px;
+    }
 
     &__title {
         margin: 0;
@@ -15,13 +74,9 @@
         font-size: $fontSizeH1;
     }
 
-    // .card__toggleButton
-
     &__toggleButton {
         margin-bottom: 20px;
     }
-
-    // .card____titleInput
 
     &__titleInput {
         margin-bottom: 5px;
@@ -33,84 +88,23 @@
         display: inline-block; //переделать класс лэйбл
     }
 
-    // .card__radioButton
-
-    &__radioButton {
-        &:checked,
-        &:not(:checked) {
-            position: absolute;
-            left: -9999px;
-        }
-        &:checked + label,
-        &:not(:checked) + label {
-            position: relative;
-            padding-left: 28px;
-            cursor: pointer;
-            line-height: 20px;
-            display: inline-block;
-            color: #666;
-        }
-        &:checked + label:before,
-        &:not(:checked) + label:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 18px;
-            height: 18px;
-            border: 1px solid color(primary-25);
-            border-radius: 100%;
-            background: #fff;
-        }
-        &:checked + label:after,
-        &:not(:checked) + label:after {
-            content: '';
-            width: 12px;
-            height: 12px;
-            background: linear-gradient(180deg, $purpleBase 0%, $purpleGradient 100%);
-            position: absolute;
-            top: 4px;
-            left: 4px;
-            border-radius: 100%;
-        }
-        &:not(:checked) + label:after {
-            opacity: 0;
-        }
-        &:not(:checked) + label {
-            color: rgba(31, 32, 65, 0.5);
-        }
-        &:checked + label:before {
-            border: 1px solid $purpleBase;
-        }
-    }
-
-    // .card__radioLabel
-
-    &__radioLabel {
-        margin-right: 20px;
-        font-family: $regularFont;
-        font-size: $fontSizeBody;
-    }
-
-    // .card__toggleButton
-
-    &__toggleButton {
+    &__toggleButton {    //Убрать из карточки, это блок!
         position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    margin: 0;
-    vertical-align: top;
-    background: #ffffff;
-    border: 1px solid #bbc1e1;
-    border-radius: 30px;
-    transition: 0.3s;
-    outline: none;
-    cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin-right: 10px;
+        display: inline-block;
+        width: 40px;
+        height: 20px;
+        margin: 0;
+        vertical-align: top;
+        background: #ffffff;
+        border: 1px solid #bbc1e1;
+        border-radius: 30px;
+        transition: 0.3s;
+        outline: none;
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin-right: 10px;
     &:checked {
         border: 1px solid $purpleBase;
     }

@@ -10,6 +10,7 @@ import '../blocks/dropdown/dropdown';
 import '../blocks/datepicker/datepicker';
 import '../blocks/datepicker/datepicker-range';
 import '../blocks/datepicker/datepicker-filter';
+import '../blocks/datepicker/datepicker-inline';
 import '../blocks/cardRoom/jquery.hipsterSlider';
 
 
@@ -19,5 +20,6 @@ import '../img/photo_1.png';
 
 
 import '../pages/FormElements/index';
+import '../pages/Cards/index';
 
 //import '../pug/page.pug';

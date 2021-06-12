@@ -7,12 +7,6 @@
     font-family: $regularFont;
     font-size: $fontSizeBody;
     padding: 21px 160px 21px 14px;
-    &--mb10 {
-        margin-bottom: 10px;
-    }
-    &--mb20 {
-        margin-bottom: 20px;
-    }
     &--minWidth {
         width: 100%; //переделать, не правильно работает
     }

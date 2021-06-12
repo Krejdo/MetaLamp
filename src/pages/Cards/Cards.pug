@@ -1,0 +1,197 @@
+.cards-wrap
+    .cards-column
+        .card-wrapper
+            .card
+                h1.card__title Найдём номера под ваши пожелания
+                .card__date-wrapper
+                    .card__date-item
+                        .card__title-wrapper
+                            h3.card__title-text прибытие
+                        +datepicker({
+                            from: true,
+                            placeholder: "ДД.ММ.ГГГГ"
+                        })
+                    .card__date-item
+                        .card__title-wrapper
+                            h3.card__title-text выезд
+                        +datepicker({
+                            to: true,
+                            placeholder: "ДД.ММ.ГГГГ"
+                        })
+
+                .card__dropdown-item.card__dropdown-guest
+                    .card__title-wrapper
+                        h3.card__title-text гости
+                    +configuration-dropdown()
+                    
+                .card__gradient-btn
+                    +buttonGradient({
+                        text: "подобрать номер",
+                        arrow: true
+                    })
+
+
+            //-================================REGISTRATION CARD==================================//
+        .card-wrapper
+            .card
+                h1.card__title Регистрация аккаунта
+                .card__input-wrapper
+                    +inputCard({
+                        text: "Имя"
+                    })
+
+                .card__input-wrapper
+                    +inputCard({
+                        text: "Фамилия"
+                    })
+
+                .card__radio-wrapper
+                    +radioButton({
+                        id: 'radio-card',
+                        text: 'Мужчина'
+                    })
+
+                    +radioButton({
+                        id: 'radio-card2',
+                        text: 'Женщина'
+                    })
+
+                .card__title-date
+                    .card__title-wrapper
+                        h3.card__title-text дата рождения
+                    +inputCard({
+                        text: "ДД.ММ.ГГГГ"
+                    })
+
+                .card__input-wrapper
+                    .card__title-wrapper
+                        h3.card__title-text данные для входа в сервис
+                    +inputCard({
+                        text: "Email"
+                    })
+                .card__input-wrapper
+                    +inputCard({
+                        text: "Пароль"
+                    })
+
+                .card__toggle
+                    input.card__toggleButton(type="checkbox" id="toggleButton")
+                    label(for="toggleButton" class="text") Получать спецпредложения
+                    
+                .card__gradient-btn
+                    +buttonGradient({
+                        text: "перейти к оплате",
+                        arrow: true
+                    })
+
+                .textButton
+                    .textButton__caption Уже есть аккаунт на Toxin 
+                    .card__border-gradient
+                        +buttonGradientBorder({
+                        text: "войти"
+                        })
+
+
+    //-================================PRICE CARD==================================//
+    .cards-column
+        .card-wrapper
+            .card
+                .priceWrapper
+                    .description
+                        h3 № 
+                        span 888
+                        p люкс 
+                    .price 
+                        span 9 990₽
+                        p в сутки
+                .card__date-wrapper
+                    .card__date-item
+                        .card__title-wrapper
+                            h3.card__title-text прибытие
+                        +datepicker({
+                            from: true,
+                            placeholder: "19.08.2019"
+                        })
+                    .card__date-item
+                        .card__title-wrapper
+                            h3.card__title-text выезд
+                        +datepicker({
+                            to: true,
+                            placeholder: "23.08.2019"
+                        })
+                .card__dropdown-item.card__dropdown-guest-value
+                    .card__title-wrapper
+                        h3.card__title-text гости
+                    +configuration-dropdown()
+                .card__price-list
+                    .card__price-item 
+                        p 9 990₽ х 4 суток
+                        span 39 960₽
+                    .card__price-item 
+                        p Сбор за услуги: скидка 2 179₽
+                        span 0₽
+                    .card__price-item 
+                        p Сбор за дополнительные услуги
+                        span 300₽
+                .card__total-wrapper
+                .card__total-item
+                    h2 Итого
+                    p 38 081₽
+                +buttonGradient({
+                    text: "забронировать",
+                    arrow: true
+                })
+
+        //-================================ENTRY CARD==================================//
+        .card-wrapper
+            .card
+                h1.card__title Войти
+                .card__input-entry
+                    .card__input-wrapper
+                        +inputCard({
+                            text: "Email"
+                        })
+
+                    .card__input-wrapper
+                        +inputCard({
+                            text: "Пароль"
+                        })
+                    
+                .card__gradient-btn
+                    +buttonGradient({
+                        text: "войти",
+                        arrow: true
+                    })
+
+                .textButton
+                    .textButton__caption Нет аккаунта на Toxin?
+                    .card__border-gradient
+                        +buttonGradientBorder({
+                        text: "создать"
+                        })
+
+
+    //-================================INLINE CALENDAR==================================//
+    .cards-column
+        .card-wrapper
+            .calendar_inline
+
+
+        .card-wrapper
+            +sliderCard({
+            img: 'room_1.png',
+            number: '888',
+            price: '9 990₽',
+            reviews: '145',
+            rate: '5',
+            luxury: true   
+            })
+
+            +sliderCard({
+            img: 'room_2.png',
+            number: '840',
+            price: '9 990₽',
+            reviews: '65',
+            rate: '4',
+            luxury: false
+            })

@@ -1,0 +1,13 @@
+body {
+    background-color: #F4F4F6;
+}
+
+.cards-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+}
+
+.card-wrapper {
+    margin: 50px;
+}

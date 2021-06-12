@@ -13,6 +13,7 @@ mixin buttonGradient({text, hover=false, arrow=false})
     button.buttonGradient
       span=text
 
+
 mixin buttonGradientBorder({modifier, text})
   button.buttonGradientBorder(class="buttonGradientBorder" + modifier)
     span=text
@@ -67,8 +68,8 @@ mixin checkBox({text, subtitle, checked=false, id, rich=false})
 
 
 mixin radioButton({id, text, checked=false})
-  input.card__radioButton(type="radio" id=id name="radio" checked= checked)
-  label.card__radioLabel(for=id)= text
+  input.radio-button(type="radio" id=id name="radio" checked= checked)
+  label.radio-label(for=id)= text
 
 
 mixin toggleButton({id, text, checked= false})
@@ -85,6 +86,7 @@ mixin likeButton({likes, modifier=false})
     button.like
       span.likes= likes
 
+
 mixin rateBtn({quantity})
   select.star-rating
     option(value= quantity)
@@ -93,12 +95,14 @@ mixin rateBtn({quantity})
     option(value="2")
     option(value="1")
 
+
 mixin slider({text})
   .slider
     .slider__title 
       h3=text
       span#result-slider
     #slider
+
 
 mixin linkText({text, hover=false})
   if hover == true 
@@ -108,8 +112,10 @@ mixin linkText({text, hover=false})
     .linkText
       h3= text
 
+
 mixin configuration-dropdown()
   input.js-dropdown
+
 
 mixin sliderCard({img, number, price, reviews, rate, luxury= false})
   .sliderWrapper
@@ -146,6 +152,7 @@ mixin sliderCard({img, number, price, reviews, rate, luxury= false})
             span= reviews
             p Отзывов
 
+
 mixin datepicker({from= false, to= false, placeholder})
   if from == true 
     .dropdown-date
@@ -167,12 +174,14 @@ mixin bulletList({text})
       .bullet__circle
     h3.bullet__text= text
 
+
 mixin iconText({title, subtitle, icon})
   .iconText-list 
     i(class= icon)
     .icontText-list__wrapper-text 
       h3= title
       p= subtitle
+
 
 mixin userFeedback({img, name, day, modifier, likes, feedback})
   .user-feedback

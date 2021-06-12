@@ -20,9 +20,6 @@
         width: 196px;
         height: 34px;
     }
-    &--mb30 {
-        margin-bottom: 30px;
-    }
     &--hover {
         opacity: 50%;
         transition: 0.2s;
@@ -31,7 +28,7 @@
         content: ' ';
         position: absolute ;
         top: 52%;
-        left: 94%;
+        left: 90%;
         bottom: auto;   //Возможно позже подобрать другое решение по вставке стрелочки в кнопку
         right: auto;
         transform: translateY(-50%);
