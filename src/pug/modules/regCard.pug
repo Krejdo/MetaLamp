@@ -1,41 +1,57 @@
-include ../../pug/mixins/mixins.pug
-
 .card
     h1.card__title Регистрация аккаунта
-    +inputCard({
-        modifier: "--mb10",
-        text: "Имя"
+    .card__input-wrapper
+        +inputCard({
+            text: "Имя"
         })
-    +inputCard({
-        modifier: "--mb10",
-        text: "Фамилия"
+
+    .card__input-wrapper
+        +inputCard({
+            text: "Фамилия"
         })
-    input.card__radioButton(type="radio" id="radio-1" name="radio")
-    label.card__radioLabel(for="radio-1") Мужчина
-    input.card__radioButton(type="radio" id="radio-2" name="radio")
-    label.card__radioLabel(for="radio-2") Женщина
-    h3.card__titleInput дата рождения
-    +inputCard({
-        modifier: "--mb20",
-        text: "ДД.ММ.ГГГГ"
+
+    .card__radio-wrapper
+        +radioButton({
+            id: 'radio-card',
+            text: 'Мужчина'
         })
-    h3.card__titleInput данные для входа в сервис
-    +inputCard({
-        modifier: "--mb10",
-        text: "Email"
+
+        +radioButton({
+            id: 'radio-card2',
+            text: 'Женщина'
         })
-    +inputCard({
-        modifier: "--mb10",
-        text: "Пароль"
+
+    .card__title-date
+        .card__title-wrapper
+            h3.card__title-text дата рождения
+        +inputCard({
+            text: "ДД.ММ.ГГГГ"
         })
-    input.card__toggleButton(type="checkbox" id="toggleButton")
-    label(for="toggleButton" class="text") Получать спецпредложения
-    +buttonGradient({
-        modifier: "--mb30",
-        text: "перейти к оплате"
+
+    .card__input-wrapper
+        .card__title-wrapper
+            h3.card__title-text данные для входа в сервис
+        +inputCard({
+            text: "Email"
         })
+    .card__input-wrapper
+        +inputCard({
+            text: "Пароль"
+        })
+
+    .card__toggle
+        input.card__toggleButton(type="checkbox" id="toggleButton")
+        label(for="toggleButton" class="text") Получать спецпредложения
+        
+    .card__gradient-btn
+        +buttonGradient({
+            text: "перейти к оплате",
+            arrow: true
+        })
+
     .textButton
         .textButton__caption Уже есть аккаунт на Toxin 
-        +buttonGradientBorder({
-        text: "войти"
-        })
+        .card__border-gradient
+            +buttonGradientBorder({
+            text: "войти"
+            })

@@ -1,6 +1,6 @@
-.cards-wrap
+.cards-content
     .cards-column
-        .card-wrapper
+        .cards-wrapper
             .card
                 h1.card__title Найдём номера под ваши пожелания
                 .card__date-wrapper
@@ -24,15 +24,14 @@
                         h3.card__title-text гости
                     +configuration-dropdown()
                     
-                .card__gradient-btn
-                    +buttonGradient({
-                        text: "подобрать номер",
-                        arrow: true
-                    })
+                +buttonGradient({
+                    text: "подобрать номер",
+                    arrow: true
+                })
 
 
             //-================================REGISTRATION CARD==================================//
-        .card-wrapper
+        .cards-wrapper
             .card
                 h1.card__title Регистрация аккаунта
                 .card__input-wrapper
@@ -94,9 +93,9 @@
 
     //-================================PRICE CARD==================================//
     .cards-column
-        .card-wrapper
+        .cards-wrapper
             .card
-                .priceWrapper
+                .description-wrapper
                     .description
                         h3 № 
                         span 888
@@ -129,9 +128,13 @@
                         span 39 960₽
                     .card__price-item 
                         p Сбор за услуги: скидка 2 179₽
+                          .i-more
+                            span.i-more-text i
                         span 0₽
                     .card__price-item 
                         p Сбор за дополнительные услуги
+                          .i-more
+                            span.i-more-text i
                         span 300₽
                 .card__total-wrapper
                 .card__total-item
@@ -143,7 +146,7 @@
                 })
 
         //-================================ENTRY CARD==================================//
-        .card-wrapper
+        .cards-wrapper
             .card
                 h1.card__title Войти
                 .card__input-entry
@@ -173,11 +176,11 @@
 
     //-================================INLINE CALENDAR==================================//
     .cards-column
-        .card-wrapper
+        .cards-wrapper
             .calendar_inline
 
 
-        .card-wrapper
+        .cards-wrapper
             +sliderCard({
             img: 'room_1.png',
             number: '888',

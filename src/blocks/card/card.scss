@@ -2,11 +2,17 @@
     width: 320px;
     box-shadow: 0 0 25px $boxShadowCard;
     border-radius: 4px;
-    padding: 40px 30px 30px 30px;
+    padding: 39px 29px 30px 29px;
     background-color: #fff;
 
     &__input-wrapper {
         margin-bottom: 10px;
+    }
+
+    &__title-text {
+        font-family: $boldFont;
+        font-size: $fontSizeH3;
+        text-transform: uppercase;
     }
 
     &__radio-wrapper {
@@ -16,7 +22,7 @@
     &__date-wrapper {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin-bottom: 21px;
     }
 
     &__total-wrapper {
@@ -48,7 +54,7 @@
     }
 
     &__title-wrapper {
-        margin-bottom: 5px;
+        margin-bottom: 6px;
     }
 
     &__title-date {
@@ -69,9 +75,10 @@
 
     &__title {
         margin: 0;
-        margin-bottom: 20px;
+        margin-bottom: 23px;
         font-family: $boldFont; //переделать
         font-size: $fontSizeH1;
+        line-height: 29px;
     }
 
     &__toggleButton {
@@ -132,5 +139,49 @@
         font-size: $fontSizeBody;
         color: color(primary-75);
     }
+    }
+  //-перенести отдельно в price card блок=========================
+
+    & .description {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        & h3 {
+            font-size: 0.875rem;
+            font-family: "Conv_Montserrat-Bold", sans-serif;
+            margin-right: 4px; 
+        }
+
+        & span {
+            font-size: 1.1875rem;
+            font-family: "Conv_Montserrat-Bold", sans-serif;
+            margin-right: 8px;
+        }
+
+        & p {
+            font-size: 0.75rem;
+            font-family: "Conv_Montserrat-Bold", sans-serif;
+            text-transform: uppercase;
+            color: #BC9CFF;
+        }
+    }
+
+    & .price {
+        display: flex;
+        align-items: flex-end;
+        color: color(primary-50);
+        & span {
+            font-family: "Conv_Montserrat-Bold", sans-serif;
+            font-size: 0.875rem;
+            margin-right: 4px;
+        }
+        & p {
+            font-size: 0.75rem;
+        }
     }
 }

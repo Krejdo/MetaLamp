@@ -684,7 +684,7 @@
     color: var(--color-primary-50);
     font-size: 0.5rem;
     position: absolute;
-    right: 15px;
+    right: 16px;
     top: 19px;
     cursor: pointer;
   }
@@ -698,12 +698,13 @@
 .dropdown-date__range, .dropdown-date-filter__input {
   box-sizing: border-box;
   width: 100%;
-  height: 16px;
+  height: 44px;
   border: 1px solid var(--color-primary-25);
   border-radius: 4px;
   font-family: "Conv_Montserrat-Regular", sans-serif;
   font-size: 0.875rem;
-  padding: 21px 0px 21px 14px;
+  padding: 15px 47px 17px 14px;
+  text-align: center;
   cursor: pointer;
   color: color(primary-75);
   &::-webkit-input-placeholder {

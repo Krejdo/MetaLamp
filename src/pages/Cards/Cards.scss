@@ -2,12 +2,27 @@ body {
     background-color: #F4F4F6;
 }
 
-.cards-wrap {
+.cards-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 15px;
 }
 
-.card-wrapper {
-    margin: 50px;
+.cards-wrapper {
+    margin: 31px;
+}
+
+.i-more {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid color(primary-25);
+    &-text {
+        position: relative;
+        top: -10px;
+        left: 8px;
+        font-family: $boldFont;
+        font-size: $fontSizeBody;
+        color: color(primary-25);
+    }
 }
