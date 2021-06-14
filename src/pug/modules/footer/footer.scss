@@ -1,19 +1,21 @@
 .footer {
     height: 372px;
-    padding: 104px 140px 100px 140px;
-    border-top: 1px solid black;
-    display: flex;
     box-shadow: 0px 1px 0px $boxShadowCard;
-    justify-content: space-between;
+    background-color: #fff;
+    margin-bottom: 1px;
+    &__wrapper {
+        max-width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
     &__colLogo {
         max-width: 260px;
-        margin-right: 40px;
         font-size: $fontSizeBody;
         color: color(primary-75);
         line-height: 24px;
     }
     &__col {
-        margin-right: 20px; //изменить позже, сейчас что бы не прилипали блоки
         & p {
             font-size: $fontSizeBody;
             color: color(primary-75);
@@ -40,11 +42,12 @@
     }
     &__social {
         height: 70px;
-        box-shadow: 0px 10px 20px $boxShadowCard;
+        // box-shadow: 0px 10px 20px $boxShadowCard;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 140px 0 140px;
+        background-color: #fff;
         & p {
             color: color(primary-75);
             font-size: $fontSizeBody;
@@ -66,7 +69,7 @@
         height: 44px;
         width: 44px;
         position: absolute;
-        right: -30px;
+        right: 1px;
         top: 1px;
         border: none;
     }

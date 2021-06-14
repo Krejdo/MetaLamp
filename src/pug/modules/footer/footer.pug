@@ -4,43 +4,44 @@
 
 
 footer.footer 
-    .footer__colLogo
-        .logo.logo--mb20
-            a(href="#")
-        p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
-    .footer__col 
-        ul 
-            li 
-                a(href="#") 
-                    h3.footer--darkText  навигация
-            for i in navLinks__1
-                li.footer--mb20  
-                    a(href=i.link) #{i.text}
-    .footer__col
-         ul 
-            li 
-                a(href="#") 
-                    h3.footer--darkText  о нас
-            for i in navLinks__2
-                li.footer--mb20 
-                    a(href=i.link) #{i.text}
-    .footer__col
-         ul 
-            li 
-                a(href="#") 
-                    h3.footer--darkText  служба поддержки
-            for i in navLinks__3
-                li.footer--mb20  
-                    a(href=i.link) #{i.text}
-    .footer__col.footer--maxWidth
-         ul 
-            li 
-                a(href="#") 
-                    h3.footer--darkText  подписка
-            p Получайте специальные предложения и новости сервиса
-            form.footer__formSend
-                +inputCard("--minWidth","Email")
-                input(type="submit" value="")
+    .footer__wrapper
+        .footer__colLogo
+            .logo.logo--mb20
+                a(href="#")
+            p Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+        .footer__col 
+            ul 
+                li 
+                    a(href="#") 
+                        h3.footer--darkText  навигация
+                for i in navLinks__1
+                    li.footer--mb20  
+                        a(href=i.link) #{i.text}
+        .footer__col
+            ul 
+                li 
+                    a(href="#") 
+                        h3.footer--darkText  о нас
+                for i in navLinks__2
+                    li.footer--mb20 
+                        a(href=i.link) #{i.text}
+        .footer__col
+            ul 
+                li 
+                    a(href="#") 
+                        h3.footer--darkText  служба поддержки
+                for i in navLinks__3
+                    li.footer--mb20  
+                        a(href=i.link) #{i.text}
+        .footer__col.footer--maxWidth
+            ul 
+                li 
+                    a(href="#") 
+                        h3.footer--darkText  подписка
+                p Получайте специальные предложения и новости сервиса
+                form.footer__formSend
+                    +inputCard("--minWidth","Email")
+                    input(type="submit" value="")
 .footer__social
     p Copyright © 2018 Toxin отель. Все права зачищены.
     .footer__link 

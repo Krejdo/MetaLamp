@@ -9,6 +9,12 @@
         margin-bottom: 10px;
     }
 
+    &__more-wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 250px;
+    }
+
     &__title-text {
         font-family: $boldFont;
         font-size: $fontSizeH3;
@@ -40,17 +46,25 @@
     &__price-item {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 18px;
     }
 
     &__total-item {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-family: $boldFont;
+        font-size: $fontSizeH2;
+        & h2 {
+            font-size: $fontSizeH2;
+        }
     }
 
     &__price-list {
-        line-height: 40px;
+        line-height: 18px;
         margin-bottom: 30px;
+        font-size: $fontSizeBody;
+        color: color(primary-75);
     }
 
     &__title-wrapper {
@@ -139,49 +153,5 @@
         font-size: $fontSizeBody;
         color: color(primary-75);
     }
-    }
-  //-перенести отдельно в price card блок=========================
-
-    & .description {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        &-wrapper {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        & h3 {
-            font-size: 0.875rem;
-            font-family: "Conv_Montserrat-Bold", sans-serif;
-            margin-right: 4px; 
-        }
-
-        & span {
-            font-size: 1.1875rem;
-            font-family: "Conv_Montserrat-Bold", sans-serif;
-            margin-right: 8px;
-        }
-
-        & p {
-            font-size: 0.75rem;
-            font-family: "Conv_Montserrat-Bold", sans-serif;
-            text-transform: uppercase;
-            color: #BC9CFF;
-        }
-    }
-
-    & .price {
-        display: flex;
-        align-items: flex-end;
-        color: color(primary-50);
-        & span {
-            font-family: "Conv_Montserrat-Bold", sans-serif;
-            font-size: 0.875rem;
-            margin-right: 4px;
-        }
-        & p {
-            font-size: 0.75rem;
-        }
     }
 }

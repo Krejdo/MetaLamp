@@ -1,5 +1,3 @@
-include /mixins/mixins.pug
-
 header.header
     .logo
         a(href="#") 
@@ -9,5 +7,12 @@ header.header
         a(href="#") Вакансии
         a(href="#") Новости
         a(href="#") Соглашения
-        +buttonGradientBorder("--styleHeader","войти")
-        +buttonGradient("--styleHeader","зарегистрироваться")
+        .header__button
+            .header__button-enter
+                +buttonGradientBorder({
+                    text: 'войти'
+                })
+            .header__button-reg
+                +buttonGradient({
+                    text: 'зарегистрироваться'
+                })

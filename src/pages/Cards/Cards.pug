@@ -1,3 +1,6 @@
+.logoKitUi
+  +logoKit()
+
 .cards-content
     .cards-column
         .cards-wrapper
@@ -95,14 +98,11 @@
     .cards-column
         .cards-wrapper
             .card
-                .description-wrapper
-                    .description
-                        h3 № 
-                        span 888
-                        p люкс 
-                    .price 
-                        span 9 990₽
-                        p в сутки
+                +hotelNumber ({
+                    luxury: true,
+                    number: '888',
+                    price: '9 990₽',
+                })
                 .card__date-wrapper
                     .card__date-item
                         .card__title-wrapper
@@ -127,19 +127,24 @@
                         p 9 990₽ х 4 суток
                         span 39 960₽
                     .card__price-item 
-                        p Сбор за услуги: скидка 2 179₽
-                          .i-more
-                            span.i-more-text i
+                        .card__more-wrapper
+                            p Сбор за услуги: скидка 2 179₽
+                            .i-more-wrapper
+                                .i-more
+                                    span.i-more-text i
                         span 0₽
                     .card__price-item 
-                        p Сбор за дополнительные услуги
-                          .i-more
-                            span.i-more-text i
+                        .card__more-wrapper
+                            p Сбор за дополнительные услуги
+                            .i-more-wrapper
+                                .i-more
+                                    span.i-more-text i
                         span 300₽
                 .card__total-wrapper
-                .card__total-item
-                    h2 Итого
-                    p 38 081₽
+                    .card__total-item
+                        h2 Итого
+                        .border-dashed
+                        span 38 081₽
                 +buttonGradient({
                     text: "забронировать",
                     arrow: true

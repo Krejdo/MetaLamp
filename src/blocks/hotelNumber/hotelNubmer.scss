@@ -1,0 +1,41 @@
+.description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        & .price {
+            display: flex;
+            align-items: flex-end;
+            color: color(primary-50);
+            & span {
+                font-family: "Conv_Montserrat-Bold", sans-serif;
+                font-size: 0.875rem;
+                margin-right: 4px;
+            }
+            & p {
+                font-size: 0.75rem;
+            }
+        }
+    }
+    & h3 {
+        font-size: 0.875rem;
+        font-family: "Conv_Montserrat-Bold", sans-serif;
+        margin-right: 4px; 
+    }
+
+    & span {
+        font-size: 1.1875rem;
+        font-family: "Conv_Montserrat-Bold", sans-serif;
+        margin-right: 8px;
+    }
+
+    & p {
+        font-size: 0.75rem;
+        font-family: "Conv_Montserrat-Bold", sans-serif;
+        text-transform: uppercase;
+        color: #BC9CFF;
+    }
+}

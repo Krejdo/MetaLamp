@@ -116,8 +116,23 @@ mixin linkText({text, hover=false})
 mixin configuration-dropdown()
   input.js-dropdown
 
+mixin hotelNumber({luxury= false, number, price})
+  .description-wrapper
+    if luxury == true
+      .description
+        h3 № 
+        span= number
+        p люкс 
+    else
+      .description
+        h3 № 
+        span= number
+    .price 
+      span= price
+      p в сутки
 
-mixin sliderCard({img, number, price, reviews, rate, luxury= false})
+
+mixin sliderCard({img, number, price, reviews, rate, luxury})
   .sliderWrapper
     .sliderCard
       ul 
@@ -131,19 +146,11 @@ mixin sliderCard({img, number, price, reviews, rate, luxury= false})
           img.sliderCard__image(src=(`../img/${img}`), alt="rooms photo")
     .sliderContent
       .sliderContent__wrapper
-        .priceWrapper
-          if luxury == true
-            .description
-              h3 № 
-              span= number
-              p люкс 
-          else
-            .description
-                h3 № 
-                span= number
-          .price 
-            span= price
-            p в сутки
+        +hotelNumber({
+          luxury: luxury,
+          number: `${number}`,
+          price: `${price}`
+        })
         .ratingWrapper
           +rateBtn({
             quantity: `${rate}`

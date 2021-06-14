@@ -50,6 +50,7 @@
             background-position: right top
         }
     }
+
     & .slider-button {
         position: absolute;
         overflow: hidden;
@@ -81,6 +82,7 @@
                 background-position: left bottom
             }
         }
+        
         &.next1 {
             right: 0px;
             background-position: right top;
@@ -117,33 +119,6 @@
     &__wrapper {
         padding: 20px;
     }
-    & .description h3 {
-        font-size: $fontSizeBody;
-        font-family: $boldFont;
-        margin-right: 4px;
-    }
-    & .description span {
-        font-size: $fontSizeH2;
-        font-family: $boldFont;
-        margin-right: 1px;
-    }
-    & .description p {
-        font-size: $fontSizeH3;
-        font-family: $boldFont;
-        text-transform: uppercase;
-        color: $purpleBase;
-    }
-    & .price {
-        color: color(primary-50);
-        & span {
-            font-family: $boldFont;
-            font-size: $fontSizeBody;
-            margin-right: 4px;
-        }
-        & p {
-            font-size: $fontSizeH3; 
-        }
-    }
     & .review {
         color: color(primary-50);
         & span {
@@ -157,27 +132,11 @@
     }
 }
 
-.description {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-.priceWrapper {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid color(primary-10);
-    padding-bottom: 13px;
-    & .price {
-        display: flex;
-        align-items: flex-end;
-    }
-}
-
 .ratingWrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 7px;
+    border-top: 1px solid color(primary-10);
     & .review {
         display: flex;
         align-items: center;
@@ -193,4 +152,10 @@
 
 .slider-display {
     border-radius: 4px 4px 0 0;
+}
+
+.sliderWrapper {
+    & .description span {
+        margin-right: 1px;
+    }
 }
