@@ -11,6 +11,8 @@
   display: none;
   z-index: 1;
   border-top: hidden;
+  position: absolute;
+  top: 100%;
   &-visible {
     display: block;
   }

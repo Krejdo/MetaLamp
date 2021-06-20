@@ -1,0 +1,68 @@
+.type {
+    display: flex;
+    margin-bottom: 51px;
+  
+    &__head {
+      display: inline-block;
+      color: color(primary-25);
+      text-align: right;
+      flex-basis: 60px;
+      flex-shrink: 0;
+  
+      &_font-large {
+        font-size: $fontSizeH1;
+        line-height: 1.2rem;
+        margin-top: 5px;
+      }
+  
+      &_font-medium {
+        font-size: $fontSizeH2;
+        line-height: 1.21rem;
+        margin-top: 3px;
+      }
+  
+      &_font-small {
+        font-size: $fontSizeH3;
+        line-height: 0.3rem;
+        margin-top: 5px;
+      }
+    }
+  
+    &__body {
+      padding-left: 30px;
+    }
+  
+    &__text {
+      font-family: $boldFont;
+  
+      &_font-large {
+        font-size: $fontSizeH1;
+        line-height: 1.875rem;
+        color: $darkShadeBase;
+        margin: 0;
+      }
+  
+      &_font-medium {
+        font-size: $fontSizeH2;
+        line-height: 1.5rem;
+        color: $darkShadeBase;
+        font-weight: bold;
+        margin: 0;
+      }
+  
+      &_font-small {
+        font-family: $boldFont;
+        text-transform: uppercase;
+        color: $darkShadeBase;
+        font-size: $fontSizeH3;
+        margin: 0;
+      }
+  
+      &_font-default {
+        font-family: $regularFont;
+        color: color(primary-75);
+        font-size: $fontSizeBody;
+        line-height: 1.5rem;
+      }
+    }
+  }

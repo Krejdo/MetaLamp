@@ -44,3 +44,7 @@ button {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+
+.icon-expand_more::before {
+    content: "\e901";
+}

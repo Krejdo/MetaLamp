@@ -10,6 +10,7 @@
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
+        padding: 0 20px;
     }
     &__colLogo {
         max-width: 260px;
@@ -28,6 +29,7 @@
     &--darkText {
         text-transform: uppercase;
         font-size: $fontSizeH3;
+        font-family: $boldFont;
         color: $darkShadeBase;
         margin-bottom: 21px;
     }
@@ -47,25 +49,17 @@
         box-shadow: 0px 10px 20px $boxShadowCard;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 0 140px 0 140px;
         background-color: #fff;
         & p {
             color: color(primary-75);
             font-size: $fontSizeBody;
         }
     }
-
-    &__formSend {
-        position: relative;
-    }
-    input[type="submit"] {
-        background: url(../img/arrow_forward_email.png) no-repeat 50% 50%;
-        height: 44px;
-        width: 44px;
-        position: absolute;
-        right: 1px;
-        top: 1px;
-        border: none;
+    &__social-container {
+        width: 1200px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 0 20px;
     }
 }

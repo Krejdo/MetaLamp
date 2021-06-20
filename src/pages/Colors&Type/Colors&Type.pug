@@ -1,51 +1,55 @@
-.logoKitUi
-  +logoKit()
+include ../../blocks/colorBox/colorBox.pug
+include ../../blocks/typeText/typeText.pug
 
-.colorTypesWrapper
-  .colorCard
-    +colorBox({
-        modifier: '_darkShade',
-        title: 'Dark Shade 100%',
-        subtitle: '#1F2041'
-    })
 
-    +colorBox({
-        modifier: '_darkShade75',
-        title: 'Dark Shade 75%',
-        subtitle: '#1F2041'
-    })
+.logoKit
 
-    +colorBox({
-        modifier: '_darkShade50',
-        title: 'Dark Shade 50%',
-        subtitle: '#1F2041'
-    })
+.color-types
+  .color-types__card
+    .color-types__item 
+      +colorBox({
+          modifier: '_dark-shade',
+          title: 'Dark Shade 100%',
+          subtitle: '#1F2041'
+      })
+    .color-types__item  
+      +colorBox({
+          modifier: '_dark-shade75',
+          title: 'Dark Shade 75%',
+          subtitle: '#1F2041'
+      })
+    .color-types__item 
+      +colorBox({
+          modifier: '_dark-shade50',
+          title: 'Dark Shade 50%',
+          subtitle: '#1F2041'
+      })
+    .color-types__item 
+      +colorBox({
+          modifier: '_dark-shade25',
+          title: 'Dark Shade 25%',
+          subtitle: '#1F2041'
+      })
+    .color-types__item 
+      +colorBox({
+          modifier: '_dark-shade5',
+          title: 'Dark Shade 5%',
+          subtitle: '#1F2041'
+      })
+    .color-types__item 
+      +colorBox({
+          modifier: '_purple',
+          title: 'Purple',
+          subtitle: '#BC9CFF'
+      })
+    .color-types__item 
+      +colorBox({
+          modifier: '_green',
+          title: 'Green',
+          subtitle: '#6FCF97'
+      })
 
-    +colorBox({
-        modifier: '_darkShade25',
-        title: 'Dark Shade 25%',
-        subtitle: '#1F2041'
-    })
-
-    +colorBox({
-        modifier: '_darkShade5',
-        title: 'Dark Shade 5%',
-        subtitle: '#1F2041'
-    })
-
-    +colorBox({
-        modifier: '_purple',
-        title: 'Purple',
-        subtitle: '#BC9CFF'
-    })
-
-    +colorBox({
-        modifier: '_green',
-        title: 'Green',
-        subtitle: '#6FCF97'
-    })
-
-  .textCard
+  .color-types__text-card
     +typeText({
       title: 'H1',
       text: 'This one is the sub-section or widget title',

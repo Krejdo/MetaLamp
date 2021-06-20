@@ -27,4 +27,8 @@
     &__social {
         display: flex;
     }
+    &__cop p {
+        font-size: $fontSizeBody;
+        color: color(primary-75);
+    }
 }

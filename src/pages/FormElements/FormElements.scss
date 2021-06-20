@@ -2,14 +2,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 15px;
-    // justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 140px;
     padding: 0 20px 0 20px;
     &__column {
-        // display: flex;
-        // flex-direction: column;
         width: 320px;
         & .buttonGradient--arrow::after {
             top: 54%;
@@ -50,7 +47,7 @@
             }
         }
     }
-    &--gray-text {
+    &_gray-text {
         font-size: $fontSizeH3;
         text-transform: uppercase;
         color: color(primary-50);
@@ -73,7 +70,7 @@
     margin-bottom: 10px;
 }
 
-.iconWrapper {
+.icon-wrapper {
     margin-bottom: 23px;
 }
 

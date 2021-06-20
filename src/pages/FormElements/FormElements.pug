@@ -1,12 +1,16 @@
-.logoKitUi
-  +logoKit()
+include ../../blocks/inputCard/inputCard.pug
+include ../../blocks/buttonGradient/buttonGradient.pug
+include ../../blocks/buttonGradientBorder/buttonGradientBorder.pug
+
+
+.logoKit
 
 .form-element
   .form-element__column
     .form-element__item
       .form-element__title
         h3.form-element__title-text Text Field
-        p.form-element--gray-text Default
+        p.form-element_gray-text Default
       +inputCard({
           text: 'Email'
       })
@@ -15,7 +19,7 @@
     .form-element__item
       .form-element__title
         h3.form-element__title-text Text Field
-        p.form-element--gray-text Hover / Focus
+        p.form-element_gray-text Hover / Focus
       +inputCard({
           text: 'This is pretty awesome',
           modifier: '--active'
@@ -68,7 +72,7 @@
     .form-element__date-bs
       .form-element__title
         h3.form-element__title-text subscription text field
-      form.footer__formSend
+      form.send-form
         +inputCard({
             modifier: "--minWidth",
             text: "Email"})
@@ -227,14 +231,14 @@
     .form-element__small-container.js-form-elements__dropdown-room-close
       .form-element__title
         h3.form-element__title-text dropdown
-        p.form-element--gray-text Default
+        p.form-element_gray-text Default
       +configuration-dropdown()
 
 
     .form-element__small-container.js-form-elements__dropdown-room-open
       .form-element__title
         h3.form-element__title-text dropdown
-        p.form-element--gray-text expanded
+        p.form-element_gray-text expanded
       +configuration-dropdown()
 
 
@@ -342,17 +346,17 @@
 //-====================================================================================================//
 .form-element
   .form-element__column
-    .iconWrapper
+    .icon-wrapper
       +iconText({
         icon: 'icon-insert_emoticon',
         title: 'Комфорт',
         subtitle: 'Шумопоглощающие стены'
       })
-    .iconWrapper
+    .icon-wrapper
       +iconText({
         icon: 'icon-location_city',
-        title: 'Комфорт',
-        subtitle: 'Шумопоглощающие стены'
+        title: 'Удобство',
+        subtitle: 'Окно в каждой из спален'
       })
         
   //- =========================================Column-2===============================================

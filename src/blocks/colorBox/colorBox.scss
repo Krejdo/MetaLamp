@@ -1,0 +1,42 @@
+.color-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 6px;
+    margin-right: 40px;
+    &__text {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        & h2 {
+            font-family: $boldFont;
+            font-size: $fontSizeH2;
+            margin-bottom: 6px;
+        }
+        & p {
+            font-size: $fontSizeH2;
+        }
+    }
+    &_dark-shade {
+        background-color: $darkShadeBase;
+    }
+    &_dark-shade75 {
+        background-color: color(primary-75);
+    }
+    &_dark-shade50 {
+        background-color: color(primary-50);
+    }
+    &_dark-shade25 {
+        background-color: color(primary-25);
+    }
+    &_dark-shade5 {
+        background-color: color(primary-5);
+    }
+    &_purple {
+        background-color: $purpleBase;
+    }
+    &_green {
+        background-color: $greenBase;
+    }
+}

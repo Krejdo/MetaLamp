@@ -1,0 +1,10 @@
+mixin buttonGradient({text, hover=false, arrow=false})
+  if hover == true
+    button.buttonGradient.buttonGradient--hover
+      span=text
+  else if arrow == true
+    button.buttonGradient.buttonGradient--arrow
+      span=text
+  else
+    button.buttonGradient
+      span=text

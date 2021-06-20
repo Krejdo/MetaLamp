@@ -1,0 +1,13 @@
+.send-form {
+    position: relative;
+
+    input[type="submit"] {
+        background: url(../img/arrow_forward_email.png) no-repeat 50% 50%; //переделать на иконку
+        height: 44px;
+        width: 44px;
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        border: none;
+    }
+}
