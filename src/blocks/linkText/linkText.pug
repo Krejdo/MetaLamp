@@ -1,0 +1,7 @@
+mixin linkText({text, hover=false})
+  if hover == true 
+    .linkText.linkText--active
+      h3= text
+  else
+    .linkText
+      h3= text

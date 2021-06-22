@@ -1,0 +1,9 @@
+mixin checkBox({text, subtitle, checked=false, id, rich=false})
+  if rich == true 
+    input.customCheckbox(type="checkbox" id=id checked= checked)
+    label.customCheckbox--bold(for=id)
+      h3= text
+      p= subtitle
+  else
+    input(type="checkbox" id=id class="customCheckbox" checked= checked)
+    label(for=id)= text

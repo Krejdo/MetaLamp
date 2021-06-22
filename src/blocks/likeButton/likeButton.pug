@@ -1,0 +1,8 @@
+mixin likeButton({likes, modifier=false})
+  #rating 
+  if modifier == true
+    button(class='like activeBtn')
+      span.likes= likes
+  else 
+    button.like
+      span.likes= likes

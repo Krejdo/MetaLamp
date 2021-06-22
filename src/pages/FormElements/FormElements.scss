@@ -1,4 +1,4 @@
-.form-element {
+.form-elements {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 15px;
@@ -58,141 +58,94 @@
     &__date-wrapper {
         width: 150px;
     }
-}
-
-.rich-item {
-    width: 271px;
-    margin-bottom: 10px;
-}
-
-.bullet-item {
-    width: 271px;
-    margin-bottom: 10px;
-}
-
-.icon-wrapper {
-    margin-bottom: 23px;
-}
-
-.user-wrapper {
-    max-width: 711px;
-}
-
-.dropdown-wrapper {
-    margin-bottom: 49px;
-}
-
-.dateDropdown .dropdown {
-    width: 150px;
-}
-
-
-input[type="submit"]{
-    background: url(../img/arrow_forward_email.png) no-repeat 50% 50%;
-    height: 44px;
-    width: 44px;
-    position: absolute;
-    right: 0px;
-    top: 1px;
-    border: none;
-    cursor: pointer;
-}
-
-
-.buttonStock {
-  width: 99px;
-}
-
-.buttonTitle {
-    display: flex;
-    margin-bottom: 16px;
-}
-
-.linkTextContainer {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    width: 142px;
-}
-
-.linkText h3 {
-    font-family: $boldFont;
-    font-size: $fontSizeH3;
-}
-
-.checkBoxWrapper{
-    margin-bottom: 41px;
-}
-
-.titleCheckBox {
-    margin-bottom: 17px;
-}
-
-.checkBoxItem {
-    margin-bottom: 10px;
-}
-
-.radioButtonWrapper {
-    margin-bottom: 41px;
-}
-
-.toggleWrapper {
-    margin-bottom: 30px;
-}
-
-.toggleCol {
-    margin-bottom: 14px;
-}
-
-.likeWrapper {
-    margin-bottom: 40px;
-    & .like {
-        margin-right: 10px;
+    &__check-box {
+        margin-bottom: 41px;
     }
-}
-
-.likeCol {
-    display: flex;
-}
-
-.rateCol {
-    display: flex;
-    justify-content: space-between;
-}
-
-.rateWrapper {
-    width: 260px;
-}
-
-
-.sliderWrapper {
-    margin-bottom: 43.56px;
-}
-
-.buttonRow {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-bottom: 30px;
-}
-
-.buttonWrapper {
-    width: 218px;
-}
-
-.buttonGradientContainer {
-    margin-bottom: 40px;
-}
-
-.paginationTitle {
-    margin-bottom: 16.44px;
-}
-
-.paginationContainer {
-    width: 241px;
-    & p {
-    font-size: $fontSizeBody;
-    color: color(primary-75);
-    text-align: center;
+    &__title-check-box {
+        margin-bottom: 17px;
+    }
+    &__check-box-item {
+        margin-bottom: 10px;
+    } 
+    &__radio-button {
+        margin-bottom: 41px;        
+    }
+    &__toggle {
+        margin-bottom: 30px;
+    }
+    &__toggle-column {
+        margin-bottom: 14px;
+    }
+    &__like {
+        margin-bottom: 40px;
+        & .like {
+            margin-right: 10px;
+        }
+    }
+    &__like-column {
+        display: flex;
+    }
+    &__rate {
+        width: 260px;
+    }
+    &__rate-column {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__slider {
+        margin-bottom: 43.56px;
+    }
+    &__button-title {
+        display: flex;
+        margin-bottom: 16px; 
+    }
+    &__button {
+        width: 218px;
+    }
+    &__button-row {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    &__button-stock {
+        width: 99px;
+    }
+    &__link-text {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        width: 142px;
+    }
+    &__button-gradient {
+        margin-bottom: 40px;
+    }
+    &__pagination-title {
+        margin-bottom: 16.44px;
+    }
+    &__pagination-wrapper {
+        width: 241px;
+        & p {
+        font-size: $fontSizeBody;
+        color: color(primary-75);
+        text-align: center;
+        }
+    }
+    &__dropdown-wrapper {
+        margin-bottom: 49px;
+    }
+    &__rich-item {
+        width: 271px;
+        margin-bottom: 10px;
+    }
+    &__bullet-item  {
+        width: 271px;
+        margin-bottom: 10px;
+    }
+    &__icon-wrapper {
+        margin-bottom: 23px;
+    }
+    &__user-wrapper {
+        max-width: 711px;
     }
 }

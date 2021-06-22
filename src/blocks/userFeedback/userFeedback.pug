@@ -1,0 +1,15 @@
+mixin userFeedback({img, name, day, modifier, likes, feedback})
+  .user-feedback
+    .user-feedback__header
+      img.user-feedback__image(src=(`../img/${img}`), alt="user photo")
+      .user-feedback__text 
+        h3= name
+        p= day
+    .user-feedback__footer
+      .user-feedback__likes
+        +likeButton({
+          modifier: modifier,
+          likes: `${likes}`
+        })
+      .user-feedback__text 
+          p= feedback

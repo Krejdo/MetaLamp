@@ -1,10 +1,17 @@
+include ../../blocks/toggleButton/toggleButton.pug
 include ../../blocks/inputCard/inputCard.pug
 include ../../blocks/buttonGradient/buttonGradient.pug
 include ../../blocks/buttonGradientBorder/buttonGradientBorder.pug
+include ../../blocks/checkBox/checkBox.pug
+include ../../blocks/radioButton/radioButton.pug
+include ../../blocks/rateBtn/rateBtn.pug
+include ../../blocks/linkText/linkText.pug
+include ../../blocks/configuration-dropdown/configuration-dropdown.pug
+include ../../blocks/datepicker/datepicker.pug
 
 
-.logoKitUi
-  +logoKit()
+
+.logoKit
 
 .cards-content
     .cards-column
@@ -82,8 +89,10 @@ include ../../blocks/buttonGradientBorder/buttonGradientBorder.pug
                     })
 
                 .card__toggle
-                    input.card__toggleButton(type="checkbox" id="toggleButton")
-                    label(for="toggleButton" class="text") Получать спецпредложения
+                    +toggleButton({
+                        id: "toggle-button",
+                        text: "Получать спецпредложения"
+                    })
                     
                 .card__gradient-btn
                     +buttonGradient({
