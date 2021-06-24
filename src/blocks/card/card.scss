@@ -108,4 +108,23 @@
     & .text {
         display: inline-block; //переделать класс лэйбл
     }
+    &__border-dashed {
+        width: 57%;
+        height: 20px;
+        border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
+    }
+    &__button-wrapper {
+        height: 44px;
+    }
+    &__text-button {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    &__text-button-caption {
+        text-align: center;
+        font-family: $regularFont;
+        font-size: $fontSizeBody;
+    }
 }

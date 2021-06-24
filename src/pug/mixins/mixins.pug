@@ -19,34 +19,6 @@ mixin hotelNumber({luxury= false, number, price})
       p в сутки
 
 
-mixin sliderCard({img, number, price, reviews, rate, luxury})
-  .sliderWrapper
-    .sliderCard
-      ul 
-        li
-          img.sliderCard__image(src=(`../img/${img}`), alt="rooms photo")
-        li
-          img.sliderCard__image(src=(`../img/${img}`), alt="rooms photo")
-        li
-          img.sliderCard__image(src=(`../img/${img}`), alt="rooms photo")
-        li
-          img.sliderCard__image(src=(`../img/${img}`), alt="rooms photo")
-    .sliderContent
-      .sliderContent__wrapper
-        +hotelNumber({
-          luxury: luxury,
-          number: `${number}`,
-          price: `${price}`
-        })
-        .ratingWrapper
-          +rateBtn({
-            quantity: `${rate}`
-          })
-          .review 
-            span= reviews
-            p Отзывов
-
-
 - var userLogin = false
 - var userName
 mixin header({name})

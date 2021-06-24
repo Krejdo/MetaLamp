@@ -1,0 +1,25 @@
+mixin sliderCard({img, number, price, reviews, rate, luxury})
+  .slider-card
+    ul 
+      li
+        img.slider-card__image(src=(`../img/${img}`), alt="rooms photo")
+      li
+        img.slider-card__image(src=(`../img/${img}`), alt="rooms photo")
+      li
+        img.slider-card__image(src=(`../img/${img}`), alt="rooms photo")
+      li
+        img.slider-card__image(src=(`../img/${img}`), alt="rooms photo")
+  .slider-card__content
+    .slider-card__content-wrapper
+      +hotelNumber({
+        luxury: luxury,
+        number: `${number}`,
+        price: `${price}`
+      })
+      .slider-card__rating
+        +rateBtn({
+          quantity: `${rate}`
+        })
+        .slider-card__review 
+          span= reviews
+          p Отзывов

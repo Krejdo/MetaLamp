@@ -39,7 +39,7 @@
 			tagName: 'ul',								/* default base selector */
 			orientation: ORIENTATION_HORIZONTAL,		/* sets the slide-orientation */
 
-			displayClass: 'slider-display',				/* defines the classname for the display wrapper */
+			displayClass: 'slider-card__display',				/* defines the classname for the display wrapper */
 
 			initializeMinItems: true,					/* defines if the slideshow should initialize with the number (or less) of items to display */
 
@@ -68,7 +68,7 @@
 			buttonTargetSelector: undefined,			/* if set, the buttons will be placed into the defined selector */
 			buttonTargetInsertionMethod: METHOD_DEFAULT,/* possible variants: append, prepend, replace, insertAfter, insertBefore. Better see the public constants such as $.hipsterSlider.METHOD_APPEND etc. */
 			buttonTemplate: function(data) {			/* default function which contains a button template */
-				return '<div class ="slider-button-wrapper"><div class="'+ data.buttonClass +' '+ data.directionClass +'">' + '<i class="icon-expand_more"></i></div></div>';
+				return '<div class ="slider-card__button"><div class="'+ data.buttonClass +' '+ data.directionClass +'">' + '<i class="icon-expand_more"></i></div></div>';
 			},
 			buttonsWrapTemplate: function(data) {		/* default function which contains a buttons wrapper template */
 				return '<div class="'+ data.buttonsWrapClass +'" />';
@@ -1790,18 +1790,18 @@
 
 	/* Buttons show/hide
 	/-------------------------------------------------------------------------*/
-	$('.sliderCard').hover(
+	$('.slider-card').hover(
 		function() {
-			$(this).children('.slider-button-wrapper').addClass('showBtn');
+			$(this).children('.slider-card__button').addClass('show-btn');
 		}, function() {
-			$(this).children('.slider-button-wrapper').removeClass('showBtn');
+			$(this).children('.slider-card__button').removeClass('show-btn');
 		}
 	);
 
 }));
 
 
-$('.sliderCard ul').hipsterSlider({
+$('.slider-card ul').hipsterSlider({
     infinite: true,
     buttons: true,
     pager: true

@@ -11,7 +11,7 @@ import '../blocks/datepicker/datepicker';
 import '../blocks/datepicker/datepicker-range';
 import '../blocks/datepicker/datepicker-filter';
 import '../blocks/datepicker/datepicker-inline';
-import '../blocks/cardRoom/jquery.hipsterSlider';
+import '../blocks/sliderCard/jquery.hipsterSlider';
 
 
 import '../img/room_1.png'; //Не заргужается из миксина, временное решение

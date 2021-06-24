@@ -8,14 +8,15 @@ include ../../blocks/rateBtn/rateBtn.pug
 include ../../blocks/linkText/linkText.pug
 include ../../blocks/configuration-dropdown/configuration-dropdown.pug
 include ../../blocks/datepicker/datepicker.pug
+include ../../blocks/sliderCard/sliderCard.pug
 
 
 
-.logoKit
+.logo-kit
 
-.cards-content
-    .cards-column
-        .cards-wrapper
+.cards
+    .cards__column
+        .cards__wrapper
             .card
                 h1.card__title Найдём номера под ваши пожелания
                 .card__date-wrapper
@@ -37,16 +38,17 @@ include ../../blocks/datepicker/datepicker.pug
                 .card__dropdown-item.card__dropdown-guest
                     .card__title-wrapper
                         h3.card__title-text гости
-                    +configuration-dropdown()
-                    
-                +buttonGradient({
-                    text: "подобрать номер",
-                    arrow: true
-                })
+                    .card__button-wrapper
+                        +configuration-dropdown()
+                .card__button-wrapper    
+                    +buttonGradient({
+                        text: "подобрать номер",
+                        arrow: true
+                    })
 
 
             //-================================REGISTRATION CARD==================================//
-        .cards-wrapper
+        .cards__wrapper
             .card
                 h1.card__title Регистрация аккаунта
                 .card__input-wrapper
@@ -95,22 +97,24 @@ include ../../blocks/datepicker/datepicker.pug
                     })
                     
                 .card__gradient-btn
-                    +buttonGradient({
-                        text: "перейти к оплате",
-                        arrow: true
-                    })
-
-                .textButton
-                    .textButton__caption Уже есть аккаунт на Toxin 
-                    .card__border-gradient
-                        +buttonGradientBorder({
-                        text: "войти"
+                    .card__button-wrapper
+                        +buttonGradient({
+                            text: "перейти к оплате",
+                            arrow: true
                         })
+
+                .card__text-button
+                    .card__text-button-caption Уже есть аккаунт на Toxin 
+                    .card__border-gradient
+                        .card__button-wrapper    
+                            +buttonGradientBorder({
+                            text: "войти"
+                            })
 
 
     //-================================PRICE CARD==================================//
-    .cards-column
-        .cards-wrapper
+    .cards__column
+        .cards__wrapper
             .card
                 +hotelNumber ({
                     luxury: true,
@@ -157,15 +161,16 @@ include ../../blocks/datepicker/datepicker.pug
                 .card__total-wrapper
                     .card__total-item
                         h2 Итого
-                        .border-dashed
+                        .card__border-dashed
                         span 38 081₽
-                +buttonGradient({
-                    text: "забронировать",
-                    arrow: true
-                })
+                .card__button-wrapper            
+                    +buttonGradient({
+                        text: "забронировать",
+                        arrow: true
+                    })
 
         //-================================ENTRY CARD==================================//
-        .cards-wrapper
+        .cards__wrapper
             .card
                 h1.card__title Войти
                 .card__input-entry
@@ -180,26 +185,28 @@ include ../../blocks/datepicker/datepicker.pug
                         })
                     
                 .card__gradient-btn
-                    +buttonGradient({
-                        text: "войти",
-                        arrow: true
-                    })
-
-                .textButton
-                    .textButton__caption Нет аккаунта на Toxin?
-                    .card__border-gradient
-                        +buttonGradientBorder({
-                        text: "создать"
+                    .card__button-wrapper    
+                        +buttonGradient({
+                            text: "войти",
+                            arrow: true
                         })
+
+                .card__text-button
+                    .card__text-button-caption Нет аккаунта на Toxin?
+                    .card__border-gradient
+                        .card__button-wrapper    
+                            +buttonGradientBorder({
+                            text: "создать"
+                            })
 
 
     //-================================INLINE CALENDAR==================================//
-    .cards-column
-        .cards-wrapper
+    .cards__column
+        .cards__wrapper
             .calendar_inline
 
 
-        .cards-wrapper
+        .cards__wrapper
             +sliderCard({
             img: 'room_1.png',
             number: '888',
@@ -209,6 +216,7 @@ include ../../blocks/datepicker/datepicker.pug
             luxury: true   
             })
 
+        .cards__wrapper
             +sliderCard({
             img: 'room_2.png',
             number: '840',

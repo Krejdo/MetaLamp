@@ -1,4 +1,4 @@
-.sliderCard {
+.slider-card {
     border-radius: 0px 0px 0px 0px;
     position: relative;
     width: 270px;
@@ -8,6 +8,50 @@
         background-position: center;
         height: 151px;
         width: 271px;
+    }
+    &__content {
+        width: 270px;
+        border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 10px 20px rgba(178, 180, 224, 0.05);
+        background: #fff;
+    }
+    &__content-wrapper {
+        padding: 20px;
+        & .description span {
+            margin-right: 1px;
+        }
+    }
+    &__review {
+        display: flex;
+        align-items: center;
+        color: color(primary-50);
+        & span {
+        font-family: $boldFont;
+        font-size: $fontSizeBody;
+        margin-right: 4px;
+        }
+        & p {
+            font-size: $fontSizeBody;
+        }
+    }
+    &__rating {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 7px;
+        border-top: 1px solid color(primary-10);
+        & .review {
+            display: flex;
+            align-items: center;
+        }
+    }
+    &__button {
+        display: none;
+        &.show-btn {
+            display: initial;
+        }
+    }
+    &__display {
+        border-radius: 4px 4px 0 0;
     }
     & li {
         position: relative;
@@ -50,7 +94,6 @@
             background-position: right top
         }
     }
-
     & .slider-button {
         position: absolute;
         overflow: hidden;
@@ -94,68 +137,16 @@
             flex-direction: column;
             justify-content: center;
                 & .icon-expand_more {
+                    display: inline-block;
+                    transform: rotate(90deg);
+                    display: flex;
+                    justify-content: center;
                     &::before {
                         content: "\e901";
                         color: white;
                         font-size: .5rem;
                     }
-                    display: inline-block;
-                    transform: rotate(90deg);
-                    display: flex;
-                    justify-content: center;
                 }
         }
-    }
-}
-
-
-
-.sliderContent {
-    // height: 107px;
-    width: 270px;
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 10px 20px rgba(178, 180, 224, 0.05);
-    background: #fff;
-    &__wrapper {
-        padding: 20px;
-    }
-    & .review {
-        color: color(primary-50);
-        & span {
-        font-family: $boldFont;
-        font-size: $fontSizeBody;
-        margin-right: 4px;
-        }
-        & p {
-            font-size: $fontSizeBody;
-        }
-    }
-}
-
-.ratingWrapper {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 7px;
-    border-top: 1px solid color(primary-10);
-    & .review {
-        display: flex;
-        align-items: center;
-    }
-}
-
-.slider-button-wrapper {
-    display: none;
-    &.showBtn {
-        display: initial;
-    }
-}
-
-.slider-display {
-    border-radius: 4px 4px 0 0;
-}
-
-.sliderWrapper {
-    & .description span {
-        margin-right: 1px;
     }
 }

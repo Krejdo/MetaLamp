@@ -1,10 +1,10 @@
 mixin buttonGradient({text, hover=false, arrow=false})
   if hover == true
-    button.buttonGradient.buttonGradient--hover
+    button.button-gradient.button-gradient_hover
       span=text
   else if arrow == true
-    button.buttonGradient.buttonGradient--arrow
+    button.button-gradient.button-gradient_arrow
       span=text
   else
-    button.buttonGradient
+    button.button-gradient
       span=text

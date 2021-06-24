@@ -1,4 +1,4 @@
-.cards-content {
+.cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 40px;
@@ -6,29 +6,7 @@
     margin: 0 auto;
     margin-top: 100px;
     padding: 0 60px;
-}
-
-.cards-wrapper {
-    margin-bottom: 40px;
-}
-
-.i-more {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 1px solid color(primary-25);
-    cursor: pointer;
-    &-text {
-        position: relative;
-        left: 8px;
-        font-family: $boldFont;
-        font-size: $fontSizeBody;
-        color: color(primary-25);
+    &__wrapper {
+        margin-bottom: 40px;
     }
-}
-
-.border-dashed {
-    width: 57%;
-    height: 20px;
-    border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
 }
