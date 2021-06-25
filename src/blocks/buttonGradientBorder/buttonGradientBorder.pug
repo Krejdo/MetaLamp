@@ -1,3 +1,7 @@
-mixin buttonGradientBorder({text})
-  button.button-gradient-border
-    span=text
+mixin buttonGradientBorder({text, hover= false})
+  if hover == true
+    button.button-gradient-border.button-gradient-border_hover
+      span=text
+  else 
+     button.button-gradient-border
+      span=text

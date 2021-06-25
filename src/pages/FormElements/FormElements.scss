@@ -1,11 +1,22 @@
 .form-elements {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 15px;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 140px;
-    padding: 0 20px 0 20px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 15px;
+        max-width: 1200px;
+        margin: 0 auto;
+        margin-top: 65px;
+        padding: 0 20px 0 20px;
+    }
+    &__wrapper:nth-child(2) {
+        margin-top: 100px;
+    }
+    &__wrapper:nth-child(3) {
+        margin-top: 172px;
+    }
+    &__wrapper:nth-child(4) {
+        margin-top: 233px;
+    }
     &__column {
         width: 320px;
         & .buttonGradient--arrow::after {
