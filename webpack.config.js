@@ -109,7 +109,7 @@ module.exports = {
     devServer: {
         historyApiFallback: true,
         contentBase: path.resolve(__dirname, 'app'),
-        open: 'chrome',
+        open: 'firefox',
         compress: true,
         hot: true,
         port: 3000,
